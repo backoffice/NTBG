@@ -43,7 +43,7 @@ body,
   margin: 0 15px;
 }
 #footer-wrapper {
-  padding: 35px 0 30px;
+  padding: 100px 0 0;
 }
 #footer-wrapper .section {
   -moz-box-sizing: border-box;
@@ -57,13 +57,17 @@ body,
   box-sizing: border-box;
   padding: 0 20px 0;
 }
-.region-footer-firstcolumn,
+.region-footer-firstcolumn {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
 .region-footer-secondcolumn,
 .region-footer-thirdcolumn,
 .region-footer-fourthcolumn {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 10px;
+  padding: 10px 10px;
 }
 
 @media all and (min-width: 560px) and (max-width: 850px) {
@@ -191,3 +195,95 @@ body,
     width: 25%;
   }
 }
+
+/*============================ FOOTER ============================*/
+
+img.footer-logo {
+    max-width: 100px;
+}
+
+.region-footer-top {
+    padding: 0 10px;
+}
+
+#footer-wrapper li, 
+#footer-wrapper ul.menu {
+    margin: 0;
+    padding: 0;
+}
+
+.region-footer {
+    margin: 80px 10px;
+}
+
+/*footer typography*/
+
+h1.footer-title {
+    margin: .5em 0 1.5em 0;
+    font-size: 18px;
+}
+
+#footer-wrapper h2 {
+    color: #9d9b96;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#footer-wrapper ul.menu a {
+    color: #35393e;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#footer-wrapper ul.menu a:hover,
+.region-footer-firstcolumn a:hover {
+    color: #35393e;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.region-footer-firstcolumn a {
+    color: #35393e;
+    cursor: pointer;
+}
+
+.region-footer p {
+    color: #9d9b96;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.region-footer-firstcolumn p {
+    margin: 20px 0 10px 0;
+    font-size: 14px;
+}
+
+/*social media icons*/
+
+a.fb:before {
+    font-family: 'fontawesome';
+    content: '\f230';
+    padding-right: 5px;
+}
+
+a.ig:before {
+    font-family: 'fontawesome';
+    content: '\f16d';
+    padding-right: 5px;    
+}
+
+a.tw:before {
+    font-family: 'fontawesome';
+    content: '\f099';
+    padding-right: 5px;    
+}
+
+@media all and (max-width: 550px) {
+  #footer-wrapper,
+  #footer-wrapper li {
+      text-align: center;
+  }
+}
+
+/*============================ END FOOTER ============================*/
+
