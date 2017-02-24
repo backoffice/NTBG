@@ -245,7 +245,13 @@
     </div></div> <!-- /#triptych, /#triptych-wrapper -->
   <?php endif; ?>
 
-  <div id="footer-wrapper"><div class="section">
+  <div id="footer-wrapper" class="footer-wrapper"><div class="section">
+
+    <?php if ($page['footer_top']): ?>
+      <div id="footer-top" role="contentinfo" class="footer-top clearfix">
+        <?php print render($page['footer_top']); ?>
+      </div> <!-- /#footer-top -->
+    <?php endif; ?>
 
     <?php if ($page['footer_firstcolumn'] || $page['footer_secondcolumn'] || $page['footer_thirdcolumn'] || $page['footer_fourthcolumn']): ?>
       <div id="footer-columns" class="clearfix">
