@@ -3,6 +3,7 @@ description = A flexible, recolorable theme with many regions and a responsive, 
 version = VERSION
 core = 7.x
 
+stylesheets[all][] = css/reset.css
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/region.css
@@ -14,6 +15,8 @@ stylesheets[all][] = css/entity.css
 stylesheets[all][] = css/field.css
 stylesheets[all][] = css/text.css
 stylesheets[all][] = css/colors.css
+stylesheets[all][] = css/brent.css
+stylesheets[all][] = css/hannah.css
 stylesheets[print][] = css/print.css
 
 scripts[] = js/collapsible-menu.js
