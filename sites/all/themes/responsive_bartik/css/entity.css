@@ -1,0 +1,8 @@
+/* homepage slideshow */
+.entity-section-homepage-slider{
+	position:relative;
+}
+.group-slider-text{
+	position:absolute;
+	bottom:0;
+}

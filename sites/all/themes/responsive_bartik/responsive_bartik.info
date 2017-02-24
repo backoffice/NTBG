@@ -10,6 +10,7 @@ stylesheets[all][] = css/block.css
 stylesheets[all][] = css/menus.css
 stylesheets[all][] = css/view.css
 stylesheets[all][] = css/node.css
+stylesheets[all][] = css/entity.css
 stylesheets[all][] = css/field.css
 stylesheets[all][] = css/text.css
 stylesheets[all][] = css/colors.css
