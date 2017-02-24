@@ -60,6 +60,7 @@
   <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_resbartik; ?>/js/html5-respond.js"></script>
   <![endif]-->
+   <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:800|Open+Sans:400,400i,700" rel="stylesheet"> 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
