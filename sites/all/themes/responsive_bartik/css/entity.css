@@ -1,3 +1,7 @@
+.entity > h2{
+	display:none;
+}
+
 /* homepage slideshow */
 .entity-section-homepage-slider{
 	position:relative;
