@@ -3,13 +3,21 @@ description = A flexible, recolorable theme with many regions and a responsive, 
 version = VERSION
 core = 7.x
 
-stylesheets[all][] = css/layout.css
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/region.css
+stylesheets[all][] = css/block.css
+stylesheets[all][] = css/menus.css
+stylesheets[all][] = css/view.css
+stylesheets[all][] = css/node.css
+stylesheets[all][] = css/field.css
+stylesheets[all][] = css/text.css
 stylesheets[all][] = css/colors.css
 stylesheets[print][] = css/print.css
 
 scripts[] = js/collapsible-menu.js
 
+regions[header_top] = Header Top
 regions[header] = Header
 regions[help] = Help
 regions[page_top] = Page top
@@ -17,7 +25,9 @@ regions[page_bottom] = Page bottom
 regions[highlighted] = Highlighted
 
 regions[featured] = Featured
+regions[content_above] = Content Above
 regions[content] = Content
+regions[content_below] = Content Below
 regions[sidebar_first] = Sidebar first
 regions[sidebar_second] = Sidebar second
 

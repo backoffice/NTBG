@@ -1,0 +1,6 @@
+.menu ul{
+	overflow:hidden;
+}
+#footer:(not) .menu li{
+	float:left;
+}

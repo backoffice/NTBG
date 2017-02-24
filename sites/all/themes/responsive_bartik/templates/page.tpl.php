@@ -89,6 +89,13 @@
 ?>
 <div id="page-wrapper"><div id="page">
 
+
+			<div id="header-top"><div class="section clearfix">
+			  <?php print render($page['header_top']); ?>
+			</div></div> <!-- /.section, /#header_top -->
+
+		
+		
   <header id="header" role="banner" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
     <?php if ($secondary_menu): ?>
       <nav id="secondary-menu" role="navigation" class="navigation">
@@ -178,7 +185,14 @@
 
     <div id="content" class="column"><div class="section">
       <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
-      <a id="main-content"></a>
+      
+	    <?php if ($content_above): ?>
+			<div id="content-above"><div class="section clearfix">
+			  <?php print render($page['content_above']); ?>
+			</div></div> <!-- /.section, /#content_above -->
+		<?php endif; ?>
+	  
+	  <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title">
@@ -214,6 +228,13 @@
       </div></div> <!-- /.section, /#sidebar-second -->
     <?php endif; ?>
 
+	
+		<?php if ($content_below): ?>
+			<div id="content-below"><div class="section clearfix">
+			  <?php print render($page['content_below']); ?>
+			</div></div> <!-- /.section, /#content_below -->
+		<?php endif; ?>
+		
   </div></div> <!-- /#main, /#main-wrapper -->
 
   <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>

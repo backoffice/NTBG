@@ -1,0 +1,21 @@
+/* header top blocks */
+#header-top .block{
+	float:left;
+}
+
+#block-menu-block-1{
+	display:none;
+	}
+@media screen and (min-width:560px){
+	#block-block-3{
+	display:none;
+	}
+	#block-menu-block-1{
+	display:block;	
+	}
+}
+
+/* header blocks */
+.region-header .block{
+	float:left;
+}

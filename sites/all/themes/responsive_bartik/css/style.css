@@ -266,13 +266,9 @@ table ul.links li {
 .item-list .pager .pager-last a {
   padding: 10px 0 10px 10px;
 }
-ul.menu li {
-  margin: 12px 0;
-}
 
-ul.menu li a {
-  padding: 10px 0;
-}
+
+
 
 .region-content ul,
 .region-content ol {
@@ -352,10 +348,7 @@ h1#site-name {
   margin: 0;
   padding: 0;
 }
-.region-header .block ul {
-  margin: 0;
-  padding: 0;
-}
+
 .region-header .block li {
   list-style: none;
   list-style-image: none;
@@ -387,13 +380,7 @@ h1#site-name {
   padding: 0;
   width: 208px;
 }
-.region-header .block-menu li a {
-  display: block;
-  border-bottom: 1px solid;
-  border-bottom-color: #eee;
-  border-bottom-color: rgba(255, 255, 255, 0.2);
-  padding: 3px 7px;
-}
+
 .region-header .block-menu li a:hover,
 .region-header .block-menu li a:focus,
 .region-header .block-menu li a:active {
