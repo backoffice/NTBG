@@ -22,12 +22,66 @@ body,
   margin-left: auto;
   margin-right: auto;
 }
+
+/* HEADER */
 #header div.section {
   position: relative;
 }
-.region-header {
-  float: right; /* LTR */
+.block.logo {
+  position: absolute;
+  top: -22px;
+  left: 15px;
+  display: block;
+  z-index: 20;
 }
+.logo img {
+	width: 124px;
+	height: 124px;
+	border-radius: 50%;
+	box-shadow: 0 0 20px rgba(0,0,0,.2);
+}
+.region-header{
+	float: none;
+	padding: 0 15px 0 150px;
+}
+.front #page-title, .front #highlighted, .front .tabs{
+	display: none;
+}
+
+/* MAIN NAV */
+.om-maximenu.om-maximenu-block ul.om-menu{
+	float: none;
+	text-align: right;
+}
+.om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf{
+	float: none;
+	display: inline;
+}
+.om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf .om-link{
+	float: none;
+	display: inline-block;
+	color: #35393e;
+}
+.om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf .om-link:hover{
+	opacity: .7;
+}
+.om-maximenu.om-maximenu-block.om-maximenu-row ul.om-menu li.om-leaf .om-link.left{
+	float: left;
+}
+.region-header .block.block-om-maximenu{
+	float: none;
+}
+.om-maximenu ul.om-menu li.om-leaf .om-link{
+	height: 80px;
+	line-height: 80px;
+}
+
+/* HOME FLEXSLIDER */
+.flexslider{
+	border: none;
+}
+
+
 #secondary-menu {
   margin: 0 auto;
   overflow: hidden;
@@ -250,7 +304,6 @@ h1.footer-title {
 .region-footer p {
     color: #9d9b96;
     font-size: 12px;
-    font-weight: bold;
 }
 
 .region-footer-firstcolumn p {

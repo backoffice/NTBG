@@ -1,9 +1,14 @@
-
+/* 
+Dark Green: #003700
+Medium Green: #1a6b15
+Lime Green: #98b523
+Deep Blue/Black: #35393e (for text)
+*/
 /* ---------- Color Module Styles ----------- */
 
 body,
 body.overlay {
-  color: #3b3b3b;
+  color: #35393e;
 }
 .comment .comment-arrow {
   border-color: #ffffff;
@@ -30,9 +35,8 @@ body.overlay {
   border-bottom: 1px solid #ffffff;
 }
 #header {
-  background-color: #1d84c3;
-  background-image: -webkit-linear-gradient(top, #055a8e 0%, #1d84c3 100%);
-  background-image: linear-gradient(to bottom, #055a8e 0%, #1d84c3 100%);
+  background-color: #fff
+  background-image: none;
 }
 a {
   color: #0071B3;
