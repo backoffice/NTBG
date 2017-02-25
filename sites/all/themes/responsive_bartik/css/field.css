@@ -1,1 +1,48 @@
-.field{}
+.section-basic-multifield {
+    margin: 0 auto;
+    max-width: 1290px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.section-basic-multifield .content {
+    padding: 100px 15px; 
+    overflow: hidden;
+}
+
+.field-name-field-multifield-heading,
+.field-name-field-multifield-subheading {
+    text-align: right;
+    width: 25%;
+}
+
+.field-name-field-multifield-heading {
+	padding: 0 5% 0 10%;
+}
+
+.field-name-field-multifield-subheading {
+	padding: 0 5% 10% 10%;
+  line-height: 1.2;
+}
+
+.field-name-field-multifield-text,
+.field-name-field-multifield-links {
+    width: 50%;
+    display: inline-block;
+}
+
+.field-name-field-multifield-heading {
+    font-size: 14px;
+}
+
+.field-name-field-multifield-subheading {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 28px;
+    float: left;
+}
+
+.field-name-field-multifield-links a:after {
+	font-family: "fontawesome";
+	content: '\f105';
+	padding-left: 10px;
+}
