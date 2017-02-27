@@ -39,14 +39,15 @@ body.overlay {
   background-image: none;
 }
 a {
-  color: #0071B3;
+  color: #97b420;
 }
 a:hover,
 a:focus {
-  color: #018fe2;
+  color: #97b420;
+  opacity: 0.7;
 }
 a:active {
-  color: #23aeff;
+  color: #97b420;
 }
 .sidebar .block {
   background-color: #f6f6f2;
