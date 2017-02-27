@@ -62,38 +62,6 @@
   <![endif]-->
    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:800|Open+Sans:400,400i,700" rel="stylesheet">
    <script src="https://use.fontawesome.com/2b5b4a8392.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>   
-   
-   <script>
-$(document).ready(function(){
-    $(".menu-toggle").click(function(){
-        $(".submenu").toggleClass("active");
-    });
-});
-</script>
-
-
-<!-- 
-<script>
-jQuery('.menu-toggle').click(function() {
-  $('.submenu').toggleClass('active');
-});
-</script>
- -->
-<!-- 
-  <script src="//code.jquery.com/jquery-1.8.3.js"></script>
-  <script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
- -->
-  
-<!-- 
-  <script>
-$( ".menu-toggle" ).click(function() {
-  $( ".submenu" ).toggleClass( "active" );
-});
-</script>
- -->
-
-
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
