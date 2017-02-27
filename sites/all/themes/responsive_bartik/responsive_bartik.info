@@ -20,6 +20,7 @@ stylesheets[all][] = css/hannah.css
 stylesheets[print][] = css/print.css
 
 scripts[] = js/collapsible-menu.js
+scripts[] = js/ntbg.js
 
 regions[header_top] = Header Top
 regions[header] = Header
