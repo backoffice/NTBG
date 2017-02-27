@@ -80,12 +80,6 @@ body,
 	line-height: 80px;
 }
 
-/* MENU - GARDEN MENU */
-@media screen and (min-width:768px){
-	.menu-toggle{
-		display: none;
-	}
-}
 .garden-menu li,
 #header-top li{
 	display: inline;
