@@ -1,9 +1,22 @@
 .garden-menu li a{
 	padding-top: 6px;
 }
+.garden-menu  ul.submenu{
+	height: 0px;
+	-webkit-transition: height 1s ease;
+	-moz-transition: height 1s ease;
+	-o-transition: height 1s ease;
+	-ms-transition: height 1s ease;
+	transition: height 1s ease;
+	display: block !important;
+}
 /* MENU - GARDEN MENU */
-@media screen and (min-width:768px){
+@media screen and (min-width:960px){
 	.menu-toggle{
 		display: none;
 	}
+}
+
+.garden-menu  ul.submenu.active{
+	height: auto;
 }
