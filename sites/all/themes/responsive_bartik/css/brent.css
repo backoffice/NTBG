@@ -1,5 +1,7 @@
 .garden-menu li a{
 	padding-top: 6px;
+	padding-bottom: 10px;
+	display: block !important;
 }
 .garden-menu  ul.submenu{
 	height: 0px;
@@ -8,15 +10,40 @@
 	-o-transition: height 1s ease;
 	-ms-transition: height 1s ease;
 	transition: height 1s ease;
-	display: block !important;
+	display: block;
 }
 /* MENU - GARDEN MENU */
 @media screen and (min-width:960px){
 	.menu-toggle{
 		display: none;
 	}
+	.garden-menu li a{
+		display: inline-block !important;
+		padding-bottom: 0px;
+	}
+	.garden-menu  ul.submenu{
+		height: auto;
+	}
 }
 
 .garden-menu  ul.submenu.active{
-	height: auto;
+	display: block;
+	height: 310px;
+}
+
+#sidr-0-button {
+  color: black;
+  line-height: 80px;
+  height: 80px;
+  float: right;
+}
+
+.menu-toggle {
+  color: #fff;
+  height: 58px;
+  left: 166px;
+  top: 0;
+  line-height: 58px;
+  z-index: 9000;
+  padding: 0 15px;
 }
