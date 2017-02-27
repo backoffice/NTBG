@@ -135,28 +135,47 @@ body,
 
 /* HOME FLEXSLIDER */
 .flexslider{
-	border: none;
+	  border: none;
+}
+
+.flex-direction-nav {
+    display: none;
+}
+
+.flexslider .slides img {
+    width: auto;
+    min-height: 200px;
 }
 
 .group-home-slider-container.max-container {
     max-width: 1290px;
     margin: 0 auto;
+    color: #fff;
 }
 
 .group-slider-text.field-group-div.section-wrap {
-    padding: 0 15px;
+    padding: 140px 15px;
 }
 
 .field-name-field-homepage-slider-main-headi {
     font-size: 56px;
     font-family: "Merriweather Sans", sans-serif;
-    color: #fff;
 }
 
 .field-name-field-homepage-slider-sub-headin,
 .field-name-field-homepage-slider-link a {
-    color: #fff;
     font-size: 20px;
+    max-width: 600px;
+    color: #fff;
+}
+
+.field-name-field-homepage-slider-link a:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.field-name-field-homepage-slider-sub-headin {
+    padding: 15px 0 20px 0;
 }
 
 .field-name-field-homepage-slider-link a:after {
@@ -165,12 +184,42 @@ body,
     padding-left: 10px;
 }
 
+/*slide navigation*/
+
+.flex-control-nav {
+    max-width: 1290px;
+    margin: 0 auto;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
+    z-index: 2;
+}
+
+.flex-control-paging li {
+    padding: 0 9px;
+    margin: 0;
+}
+
+.flex-control-paging li a {
+    width: 22px;
+    height: 22px;
+    background: #fff;
+}
+
+.flex-control-paging li a.flex-active {
+    background: none;
+    border: 2px solid #97b420;
+}
+
+
 /*WELCOME MESSAGE*/
 
 .welcome {
     margin: 0 auto;
     max-width: 1290px;
-    padding: 100px 15px;
+    padding: 50px 15px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
