@@ -26,6 +26,13 @@ body,
 	display: none !important;
 	
 }
+.max-container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.section-wrap {
+    padding: 0px 15px;
+}
 
 /* HEADER */
 #header div.section {
@@ -143,18 +150,11 @@ body,
 }
 
 .flexslider .slides img {
-    width: auto;
-    min-height: 200px;
-}
-
-.group-home-slider-container.max-container {
-    max-width: 1290px;
-    margin: 0 auto;
-    color: #fff;
-}
-
-.group-slider-text.field-group-div.section-wrap {
-    padding: 140px 15px;
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    min-height: 400px;
 }
 
 .field-name-field-homepage-slider-main-headi {
@@ -263,37 +263,31 @@ body,
 
 /*breadfruit section*/
 
-.entity.entity-section.section-basic-multifield.contextual-links-region.homepage.breadfruit.clearfix {
+.section-basic-multifield.breadfruit {
     background: url(/sites/all/themes/responsive_bartik/images/breadfruit-bg.png);
-    min-height: 700px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.entity.entity-section.section-basic-multifield.contextual-links-region.homepage.breadfruit.clearfix .content {
-    background: url(/sites/all/themes/responsive_bartik/images/breadfruit.png) no-repeat left top;
-    min-height: 700px;
-    background-position: -40% 22.5%;
-}
-
 .breadfruit .col.span-5-of-12, 
 .breadfruit .col.span-7-of-12 {
-    width: 30% !important;
-    padding-left: 50%;
+    clear: both;
+    float: right;
+    width: 50% !important;
     margin: 0;
     color: #fff !important;
 }
 
 .breadfruit .col.span-5-of-12 {
-  padding-top: 5%;  
+    padding-top: 5%;  
 }
 
 .breadfruit .field-name-field-multifield-subheading {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 .breadfruit .field-name-field-multifield-text {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 
 .breadfruit .field-name-field-multifield-links a {
@@ -301,16 +295,82 @@ body,
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   .breadfruit .col.span-5-of-12, 
   .breadfruit .col.span-7-of-12 {
     width: 100% !important;
-    padding: 0;
   }
 
   .welcome .group-column1 .field {
     text-align: left;
     padding: 0;
+  }
+}
+
+/*BREADFRUIT IMG*/
+
+.section-basic-multifield.breadfruit .content {
+  background: url(/sites/all/themes/responsive_bartik/images/breadfruit.png) no-repeat left top;
+  min-height: 600px;
+  background-size: 450px;
+  background-position: 360px;
+  transition: all .5s ease;
+}
+
+@media screen and (min-width: 515px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: 130px 210px;
+    background-size: 600px;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -150px 50px;
+    background-size: a700px;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -200px 0px;
+    background-size: 850px;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -230px 0px;
+    background-size: 970px;
+    min-height: 700px;
+  }
+}
+
+/*@media screen and (min-width:1500px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -260px -40px;
+    background-size:1110px;
+  }
+}*/
+
+@media screen and (min-width:1600px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -260px -30px;
+    background-size: 1130px;
+  }
+}
+
+@media screen and (min-width:1700px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -270px -30px;
+    background-size: 1150px;
+  }
+}
+
+@media screen and (min-width:1800px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: -260px -30px;
+    background-size: 1200px;
   }
 }
 
