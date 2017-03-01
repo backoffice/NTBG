@@ -1,1 +1,9 @@
 .view{}
+
+.homepage.gardens .view-content{
+	display:flex;
+	flex-flow: row wrap;
+}
+.homepage.gardens {
+	flex:1;
+}
