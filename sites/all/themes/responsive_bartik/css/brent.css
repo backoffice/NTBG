@@ -1,3 +1,94 @@
+/* HEADER SEARCH */
+.om-menu .leaf-search .link-search:before{
+	font-family: fontawesome;
+	content: "\f002";
+	font-size: 16px;
+}
+.om-menu .leaf-search .link-search{
+	font-size: 0;
+	width: 16px;
+}
+.leaf-search .om-maximenu-content{
+	left: auto;
+	right: 0;
+}
+.om-maximenu .om-maximenu-open {
+  display: none;
+}
+.region-header .block{
+	float: none;
+}
+.leaf-search .container-inline .form-item{
+	margin: 0;
+	position: relative;
+}
+.form-item-search-block-form input{
+	width: 100%;
+	box-sizing: border-box;
+}
+.om-maximenu-no-style .om-maximenu-content{
+	top: 30px;
+}
+.om-maximenu-no-style .om-maximenu-middle{
+	border-radius: 0 0 5px 5px;
+}
+.om-maximenu-no-style .om-maximenu-middle-right{
+	padding: 20px;
+}
+#search-block-form .form-actions{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#search-block-form input.form-text{
+	padding-right: 100px;
+}
+
+/* FORM ELEMENT DESIGN */
+input.form-text,
+input.form-submit,
+.sidr input[type="text"],
+.sidr input[type="button"], 
+.sidr input[type="submit"]{
+	height: 52px;
+	line-height: 52px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 0 15px;
+	background-color: #fff;
+}
+input.form-submit,
+.sidr input[type="submit"]{
+	cursor: pointer;
+	border-color: #98B523;
+	background-color: #98B523;
+	color: #fff;
+}
+.sidr input[type="submit"]{
+	width: 100%;
+}
+.sidr input[type="button"]:hover, .sidr input[type="submit"]:hover{
+	background-color: #98B523;
+}
+.container-inline div, .container-inline label{
+	vertical-align: top;
+}
+
+/* HOVER EFFECTS */
+.logo a:hover{
+  opacity: 1;
+}
+input.form-submit:hover,
+.sidr input[type="button"]:hover, 
+.sidr input[type="submit"]:hover{
+	opacity: .7;
+}
+input.form-submit:active{
+	opacity: 1;
+}
+
 .garden-menu li a{
 	padding-top: 6px;
 	padding-bottom: 10px;
@@ -11,6 +102,11 @@
 	-ms-transition: height 1s ease;
 	transition: height 1s ease;
 	display: block;
+	margin-top: 58px;
+	box-shadow: 0 10px 10px rgba(0,0,0,.15) inset;
+}
+.garden-menu ul.submenu li:first-child a{
+	padding-top: 20px;
 }
 /* MENU - GARDEN MENU */
 @media screen and (min-width:960px){
@@ -23,27 +119,122 @@
 	}
 	.garden-menu  ul.submenu{
 		height: auto;
+		margin-top: 0;
+		box-shadow: none;
+		padding: 0;
+	}
+	.garden-menu ul.submenu li:first-child a{
+		padding-top: 0;
 	}
 }
 
+/* SIDR MOBILE MENU */
+.sidr ul li a, .sidr ul li span{
+	color: #35393e;
+}
+.sidr ul li:hover > a, .sidr ul li a:focus, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	opacity: 1;
+	border: none;
+}
+.sidr ul{
+	border: none;
+}
+.sidr ul li{
+	line-height: 48px;
+	border: none;
+}
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active{
+	line-height: 48px;
+}
+.sidr-class-element-invisible,
+.sidr-class-om-maximenu-open,
+.sidr ul li .sidr-class-link-search{
+	display: none;
+}
+
+
 .garden-menu  ul.submenu.active{
 	display: block;
-	height: 310px;
+	height: 320px;
 }
 
 #sidr-0-button {
-  color: black;
+  color: #35393e;
   line-height: 80px;
   height: 80px;
   float: right;
 }
-
 .menu-toggle {
   color: #fff;
   height: 58px;
-  left: 166px;
+  left: 150px;
   top: 0;
   line-height: 58px;
-  z-index: 9000;
+  z-index: 999;
   padding: 0 15px;
+  cursor: pointer;
+  position: absolute;
+}
+.menu-toggle:after{
+	font-family: fontawesome;
+	content: "\f0d7";
+	margin-left: 6px;
+}
+.menu-toggle.up:after{
+	content: "\f0d8";
+}
+@media screen and (max-width: 959px){
+	.garden-menu{
+		width: 100%;
+		text-align: center;
+		padding-left: 0;
+	}
+	#header-top #block-menu-menu-header-actions{
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+@media screen and (max-width: 767px){
+	#block-menu-menu-header-actions li a {
+	  height: 42px;
+	  line-height: 42px;
+	}
+	.menu-toggle {
+	  height: 42px;
+	  line-height: 42px;
+	  left: 95px;
+	}
+	.garden-menu ul.submenu {
+	  margin-top: 42px;
+	}
+	#sidr-0-button {
+	  line-height: 52px;
+	  height: 52px;
+	}
+	.logo img {
+	  width: 84px;
+	  height: 84px;
+	}
+	.block.logo {
+	  top: -16px;
+	}
+}
+@media screen and (max-width: 481px){
+	#block-menu-menu-header-actions a.donate{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 420px){
+	#block-menu-menu-header-actions li a {
+	  font-size: 75%;
+	}
+	.menu-toggle {
+	  font-size: 75%;
+	  left: 86px;
+	}
 }
