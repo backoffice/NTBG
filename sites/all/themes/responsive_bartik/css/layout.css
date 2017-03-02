@@ -157,14 +157,30 @@ body,
     min-height: 400px;
 }
 
+.field-name-field-homepage-slider-image:after {
+  content: "";
+  background-color: rgba(0,0,0,.15);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.group-slider-text {
+    bottom: 100px !important;
+}
+
 .field-name-field-homepage-slider-main-headi {
-    font-size: 56px;
+    font-size: 24px;
     font-family: "Merriweather Sans", sans-serif;
+    color: #fff;
 }
 
 .field-name-field-homepage-slider-sub-headin,
 .field-name-field-homepage-slider-link a {
-    font-size: 20px;
+    font-size: 18px;
     max-width: 600px;
     color: #fff;
 }
@@ -184,22 +200,39 @@ body,
     padding-left: 10px;
 }
 
+@media only screen and (min-width: 780px) {
+  .field-name-field-homepage-slider-main-headi {
+      font-size: 48px;
+  }
+
+  .field-name-field-homepage-slider-sub-headin,
+  .field-name-field-homepage-slider-link a {
+      font-size: 20px;
+  }
+  .group-slider-text {
+    bottom: 130px !important;
+}
+}
+
 /*slide navigation*/
 
 .flex-control-nav {
     max-width: 1290px;
     margin: 0 auto;
+    padding: 0 15px;
     text-align: left;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 5%;
+    bottom: 10%;
     z-index: 2;
+    box-sizing: border-box;
 }
 
 .flex-control-paging li {
-    padding: 0 9px;
+    padding-right: 15px;
     margin: 0;
+    cursor: pointer;
 }
 
 .flex-control-paging li a {
@@ -219,7 +252,7 @@ body,
 .welcome {
     margin: 0 auto;
     max-width: 1290px;
-    padding: 50px 15px;
+    padding: 0 15px 60px 15px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
@@ -260,6 +293,7 @@ body,
   content: '\f105';
   padding-left: 10px;
 }
+
 
 /*breadfruit section*/
 
@@ -312,22 +346,36 @@ body,
 .section-basic-multifield.breadfruit .content {
   background: url(/sites/all/themes/responsive_bartik/images/breadfruit.png) no-repeat left top;
   min-height: 600px;
-  background-size: 450px;
-  background-position: 360px;
+  background-size: 200px;
+  background-position: right bottom;
   transition: all .5s ease;
 }
 
-@media screen and (min-width: 515px) {
+@media screen and (min-width: 360px) {
   .section-basic-multifield.breadfruit .content {
-    background-position: 130px 210px;
-    background-size: 600px;
+    background-position: right bottom;
+    background-size: 300px;
+  }
+}
+
+@media screen and (min-width: 490px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: right bottom;
+    background-size: 450px;
+  }
+}
+
+@media screen and (min-width: 723px) {
+  .section-basic-multifield.breadfruit .content {
+    background-position: right bottom;
+    background-size: 510px;
   }
 }
 
 @media screen and (min-width:1000px) {
   .section-basic-multifield.breadfruit .content {
     background-position: -150px 50px;
-    background-size: a700px;
+    background-size: 700px;
   }
 }
 
@@ -345,13 +393,6 @@ body,
     min-height: 700px;
   }
 }
-
-/*@media screen and (min-width:1500px) {
-  .section-basic-multifield.breadfruit .content {
-    background-position: -260px -40px;
-    background-size:1110px;
-  }
-}*/
 
 @media screen and (min-width:1600px) {
   .section-basic-multifield.breadfruit .content {
@@ -374,6 +415,65 @@ body,
   }
 }
 
+/*social icons*/
+
+.social-bar {
+  padding: 40px 15px;
+}
+
+.social-bar .content {
+  text-align: center;
+}
+
+ul.social-list {
+  padding: 0;
+}
+
+ul.social-list li {
+  display: inline-block;
+  padding-right: 100px;  
+}
+
+ul.social-list li:last-child {
+  padding-right: 0;
+}
+
+.social-icon {
+  font-size: 60px;
+  display: inline-block;
+}
+
+.social-text {
+  display: inline-block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.social-action-text {
+  font-size: 14px;
+  color: #35393e;
+}
+
+span.social-name {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 23px;
+  color: #35393e;
+  display: block;
+}
+
+@media screen and (max-width:780px) {
+  ul.social-list li {
+    display: block;
+    padding: 0;
+  }
+  .social-icon {
+    display: block;
+  }
+  .social-text {
+    text-align: center;
+    padding: 0;
+  }
+}
 
 /*general styling*/
 
