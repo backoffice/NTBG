@@ -90,7 +90,10 @@ var {
   font-size: 0.77em;
   font-family: Menlo, Consolas, "Andale Mono", "Lucida Console", "Nimbus Mono L", "DejaVu Sans Mono", monospace, "Courier New";
 }
-
+img{
+	max-width:100%;
+	height:auto;
+}
 ul,
 ul li.leaf{
 	list-style:none;
