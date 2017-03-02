@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the National Tropical Botanical Garden SEO feature.
+ */
+
+include_once 'national_tropical_botanical_garden_seo.features.inc';

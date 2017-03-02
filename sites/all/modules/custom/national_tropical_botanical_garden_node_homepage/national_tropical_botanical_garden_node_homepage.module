@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the National Tropical Botanical Garden Homepage feature.
+ */
+
+include_once 'national_tropical_botanical_garden_node_homepage.features.inc';

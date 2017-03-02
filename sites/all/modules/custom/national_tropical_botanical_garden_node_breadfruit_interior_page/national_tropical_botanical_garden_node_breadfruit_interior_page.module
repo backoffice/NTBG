@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the National Tropical Botanical Garden Breadfruit Interior Page feature.
+ */
+
+include_once 'national_tropical_botanical_garden_node_breadfruit_interior_page.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the National Tropical Botanical Garden Users feature.
+ */
+
+include_once 'national_tropical_botanical_garden_users.features.inc';
