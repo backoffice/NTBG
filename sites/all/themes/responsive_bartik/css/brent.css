@@ -48,58 +48,7 @@ transition: all 0.15s ease-in-out;
 	padding-right: 100px;
 }
 
-/* FORM ELEMENT DESIGN */
-input.form-text,
-input.form-submit,
-.sidr input[type="text"],
-.sidr input[type="button"], 
-.sidr input[type="submit"],
-a.button{
-	height: 52px;
-	line-height: 52px;
-	border: 2px solid #ccc;
-	border-radius: 3px;
-	box-sizing: border-box;
-	font-size: 16px;
-	padding: 0 15px;
-	background-color: #fff;
-}
-input.form-submit,
-.sidr input[type="submit"],
-a.button{
-	cursor: pointer;
-	border-color: #98B523;
-	background-color: #98B523;
-	color: #fff;
-}
-a.button.secondary{
-	border-color: #35393e;
-	background-color: #35393e;
-}
-.sidr input[type="submit"]{
-	width: 100%;
-}
-.sidr input[type="button"]:hover, .sidr input[type="submit"]:hover{
-	background-color: #98B523;
-}
-.container-inline div, .container-inline label{
-	vertical-align: top;
-}
-
-/* HOVER EFFECTS */
-.logo a:hover,
-.map-icon a:hover{
-  opacity: 1;
-}
-input.form-submit:hover,
-.sidr input[type="button"]:hover, 
-.sidr input[type="submit"]:hover{
-	opacity: .7;
-}
-input.form-submit:active{
-	opacity: 1;
-}
-
+/* HEADER GARDEN MENU */
 .garden-menu li a{
 	padding-top: 6px;
 	padding-bottom: 10px;
