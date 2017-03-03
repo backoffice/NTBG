@@ -30,7 +30,8 @@ body,
     max-width: 1290px;
     margin: 0 auto;
 }
-.section-wrap {
+.section-wrap,
+.max-container > .content {
     padding: 0px 15px;
 }
 
