@@ -383,3 +383,7 @@ a.image-wrapper{
 	  padding: 80px 0;
 	}
 }
+ul.quicktabs-tabs {
+  text-align: center;
+  margin: 0 0 5%;
+}
