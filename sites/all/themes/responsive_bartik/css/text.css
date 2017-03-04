@@ -81,6 +81,9 @@ h6 {
   font-weight: inherit;
   font-family: 'Merriweather Sans', sans-serif;
 }
+h1 {
+  font-size: 28px;
+}
 code,
 pre,
 kbd,

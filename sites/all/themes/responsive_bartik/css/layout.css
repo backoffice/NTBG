@@ -1022,3 +1022,47 @@ div#sidr-1 p {
     margin: 0 0 12px;
     padding: 10px 15px;
 }
+
+/*garden summary*/
+
+.node-type-garden-landing-page .field-type-text-with-summary {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary p {
+    padding-bottom: 30px;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary img {
+    padding-right: 50px;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary img:last-child {
+    padding-right: 0px;
+}
+
+@media all and (max-width: 550px) {
+  .node-type-garden-landing-page .field-type-text-with-summary img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*garden projects*/
+
+#history {
+    background: #35393e;
+    color: #fff;
+    display: inline-block;
+}
+
+div#history .flexslider {
+    max-width: 422px;
+    height: auto;
+    display: inline-block;
+    float: left;
+}
