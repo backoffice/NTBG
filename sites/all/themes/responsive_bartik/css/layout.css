@@ -43,7 +43,7 @@ input.form-submit,
 .sidr input[type="submit"],
 a.button,
 .button a{
-	/*height: 52px;*/
+	min-width: 230px;
 	line-height: 52px;
 	border: 2px solid #ccc;
 	border-radius: 3px;
@@ -52,6 +52,7 @@ a.button,
 	padding: 0 15px;
 	background-color: #fff;
   display: inline-block;
+  text-align: left;
 }
 input.form-submit,
 .sidr input[type="submit"],
@@ -74,6 +75,11 @@ a.button.secondary{
 }
 .container-inline div, .container-inline label{
 	vertical-align: top;
+}
+.button a:after {
+    font-family: "fontawesome";
+    content: '\f105';
+    padding-left: 10px;
 }
 /* END FORM ELEMENT DESIGN */
 
@@ -250,12 +256,6 @@ input.form-submit:active{
 
 .field-name-field-homepage-slider-sub-headin {
     padding: 15px 0 20px 0;
-}
-
-.field-name-field-homepage-slider-link a:after {
-    font-family: "fontawesome";
-    content: '\f105';
-    padding-left: 10px;
 }
 
 @media only screen and (min-width: 780px) {
@@ -1054,15 +1054,128 @@ div#sidr-1 p {
 
 /*garden projects*/
 
-#history {
+.group-history-wrapper {
     background: #35393e;
     color: #fff;
-    display: inline-block;
 }
 
-div#history .flexslider {
-    max-width: 422px;
-    height: auto;
-    display: inline-block;
-    float: left;
+.group-project-slider .flexslider {
+    margin: 0 0 0 20px;
 }
+
+.group-project-info h1 {
+    margin-top: 0;
+}
+
+.group-project-slider .flexslider .slides img {
+    max-height: 422px;
+}
+
+.group-project-slider .flex-control-nav {
+    bottom: 5%;
+    text-align: center;
+}
+
+.section-project .content {
+    margin: 0 auto;
+    max-width: 1075px;
+    padding: 80px 15px;
+    overflow: hidden;
+}
+
+.section-project .field-name-field-project-description p {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .group-project-slider .flexslider {
+      margin: 0;
+  }
+}
+
+/*garden tours*/
+
+.group-tours .field-name-field-tours {
+    margin: 40px 0;
+}
+
+.field-name-field-sticker {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+
+.field-name-field-tour-thumbnail-image {
+    width: 100%;
+}
+
+.group-tours .button a {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.field-name-field-tour-visitor-info-link.button a {
+    background: #35393e;
+    border-color: #35393e;
+}
+
+.group-tours .field-name-title-field {
+    font-size: 28px;
+}
+
+.group-tours .field-name-field-tour-subtitle {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.group-tours .field-name-field-tour-description {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.group-tours .field-name-field-tour-description p {
+    margin-bottom: 20px;
+}
+
+.group-column2-1 {
+    margin-left: 0;
+}
+
+.section-tour {
+    border-style: solid;
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+    padding: 50px 0 40px 0;
+}
+
+.section-tour ul.links {
+    padding: 0;
+}
+
+.section-tour ul.inline li {
+    padding: 0;
+}
+
+.group-tours .field-label {
+    float: left;
+    padding-right: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.group-tours h3.field-label {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.group-tours .field-name-field-ticket-prices .field-label {
+    float: none;
+}
+
+.group-tours .field-name-field-departure,
+.group-tours .field-name-field-tour-duration {
+    padding-bottom: 20px;
+}
+
+
+
+
