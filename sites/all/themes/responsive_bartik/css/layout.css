@@ -35,6 +35,69 @@ body,
     padding: 0px 15px;
 }
 
+/* FORM ELEMENT DESIGN */
+input.form-text,
+input.form-submit,
+.sidr input[type="text"],
+.sidr input[type="button"], 
+.sidr input[type="submit"],
+a.button,
+.button a{
+	min-width: 230px;
+	line-height: 52px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 16px;
+	padding: 0 15px;
+	background-color: #fff;
+  display: inline-block;
+  text-align: left;
+}
+input.form-submit,
+.sidr input[type="submit"],
+a.button,
+.button a{
+	cursor: pointer;
+	border-color: #98B523;
+	background-color: #98B523;
+	color: #fff;
+}
+a.button.secondary{
+	border-color: #35393e;
+	background-color: #35393e;
+}
+.sidr input[type="submit"]{
+	width: 100%;
+}
+.sidr input[type="button"]:hover, .sidr input[type="submit"]:hover{
+	background-color: #98B523;
+}
+.container-inline div, .container-inline label{
+	vertical-align: top;
+}
+.button a:after {
+    font-family: "fontawesome";
+    content: '\f105';
+    padding-left: 10px;
+}
+/* END FORM ELEMENT DESIGN */
+
+/* HOVER EFFECTS */
+.logo a:hover,
+.map-icon a:hover{
+  opacity: 1;
+}
+input.form-submit:hover,
+.sidr input[type="button"]:hover, 
+.sidr input[type="submit"]:hover{
+	opacity: .7;
+}
+input.form-submit:active{
+	opacity: 1;
+}
+/* END HOVER EFFECTS */
+
 /* HEADER */
 #header div.section {
   position: relative;
@@ -193,12 +256,6 @@ body,
 
 .field-name-field-homepage-slider-sub-headin {
     padding: 15px 0 20px 0;
-}
-
-.field-name-field-homepage-slider-link a:after {
-    font-family: "fontawesome";
-    content: '\f105';
-    padding-left: 10px;
 }
 
 @media only screen and (min-width: 780px) {
@@ -839,7 +896,7 @@ a.tw:before {
     height: 80vh;
     object-fit: cover;
     display: block;
-    min-height: 400px;
+    min-height: 550px;
 }
 
 .group-hero {
@@ -880,36 +937,27 @@ a.tw:before {
 .field-name-field-garden-type ul {
   font-family: "Merriweather Sans", sans-serif !important;
   font-size: 28px;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
+  padding-left: 0;
 }
 
 .field-type-location {
-  padding-bottom: 15px;
+  padding-bottom: 40px;
   font-size: 18px;
 }
 
-.field-name-field-book-tour-link {
-  margin: 0 auto;
+.map-link .map-link a {
+    color: #fff;
+    text-decoration: underline !important;
 }
 
-.field-name-field-book-tour-link.button {
-  max-width: 230px;
-  min-height: 48px;
-  line-height: 48px;
-  background: #98b523;
-  text-align: left;
-  border-radius: 3px;
+.location-hidden,
+span.fn {
+    display: none;
 }
 
-.field-name-field-book-tour-link a {
-  color: #fff;
-  font-size: 18px;
-  text-align: left;
-  padding-left: 10px;
-}
-
+.field-name-field-book-tour-link a,
 .field-name-field-book-tour-link a:hover {
-  opacity: 0.7;
   color: #fff;
 }
 
@@ -918,3 +966,216 @@ a.tw:before {
   content:'\f105';
   padding-left: 10px;
 }
+
+/*gardens submenu*/
+
+.field-name-field-page-menu {
+    position: relative;
+    overflow: hidden;
+    background: #2f3236;
+    text-align: center;
+}
+
+.field-name-field-page-menu p {
+    display: inline;
+    color: #98b523;
+    padding-right: 20px;
+}
+
+.field-name-field-page-menu ul {
+    display: inline;
+    padding: 0;
+}
+
+.field-name-field-page-menu li {
+    display: inline-block;
+}
+
+.field-name-field-page-menu li a {
+    display: inline-block;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/*gardens submenu mobile menu*/
+
+div#sidr-wrapper-1 {
+    text-align: right;
+    padding: 15px;
+}
+
+div#sidr-1 {
+    background: #2f3236;
+    color: #98b523;
+    -webkit-box-shadow: inset 0 0 5px 5px #2A2D30;
+    -moz-box-shadow: inset 0 0 5px 5px #2A2D30;
+    box-shadow: inset 0 0 5px 5px #2A2D30;
+}
+
+div#sidr-1 a {
+    color: #fff;
+}
+
+div#sidr-1 p {
+    font-size: 18px;
+    margin: 0 0 12px;
+    padding: 10px 15px;
+}
+
+/*garden summary*/
+
+.node-type-garden-landing-page .field-type-text-with-summary {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary p {
+    padding-bottom: 30px;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary img {
+    padding-right: 50px;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary img:last-child {
+    padding-right: 0px;
+}
+
+@media all and (max-width: 550px) {
+  .node-type-garden-landing-page .field-type-text-with-summary img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/*garden projects*/
+
+.group-history-wrapper {
+    background: #35393e;
+    color: #fff;
+}
+
+.group-project-slider .flexslider {
+    margin: 0 0 0 20px;
+}
+
+.group-project-info h1 {
+    margin-top: 0;
+}
+
+.group-project-slider .flexslider .slides img {
+    max-height: 422px;
+}
+
+.group-project-slider .flex-control-nav {
+    bottom: 5%;
+    text-align: center;
+}
+
+.section-project .content {
+    margin: 0 auto;
+    max-width: 1075px;
+    padding: 80px 15px;
+    overflow: hidden;
+}
+
+.section-project .field-name-field-project-description p {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+  .group-project-slider .flexslider {
+      margin: 0;
+  }
+}
+
+/*garden tours*/
+
+.group-tours .field-name-field-tours {
+    margin: 40px 0;
+}
+
+.field-name-field-sticker {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+
+.field-name-field-tour-thumbnail-image {
+    width: 100%;
+}
+
+.group-tours .button a {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.field-name-field-tour-visitor-info-link.button a {
+    background: #35393e;
+    border-color: #35393e;
+}
+
+.group-tours .field-name-title-field {
+    font-size: 28px;
+}
+
+.group-tours .field-name-field-tour-subtitle {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.group-tours .field-name-field-tour-description {
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+.group-tours .field-name-field-tour-description p {
+    margin-bottom: 20px;
+}
+
+.group-column2-1 {
+    margin-left: 0;
+}
+
+.section-tour {
+    border-style: solid;
+    border-bottom: 2px solid rgba(0, 0, 0, .3);
+    padding: 50px 0 40px 0;
+}
+
+.section-tour ul.links {
+    padding: 0;
+}
+
+.section-tour ul.inline li {
+    padding: 0;
+}
+
+.group-tours .field-label {
+    float: left;
+    padding-right: 5px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.group-tours h3.field-label {
+    margin: 0;
+    padding-right: 10px;
+}
+
+.group-tours .field-name-field-ticket-prices .field-label {
+    float: none;
+}
+
+.group-tours .field-name-field-departure,
+.group-tours .field-name-field-tour-duration {
+    padding-bottom: 20px;
+}
+
+
+
+
