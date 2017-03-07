@@ -1,5 +1,9 @@
 
 /* ------------------- Basic Layout Styles ---------------- */
+.tabs,
+.breadcrumb {
+    display: none;
+}
 
 html,
 body,
@@ -221,6 +225,7 @@ input.form-submit:active{
     min-height: 400px;
 }
 
+.views-field-field-hero-background-image:after,
 .field-name-field-homepage-slider-image:after {
   content: "";
   background-color: rgba(0,0,0,.15);
@@ -477,6 +482,10 @@ input.form-submit:active{
 
 .social-bar {
   padding: 40px 15px;
+}
+
+.node-type-garden-landing-page .social-bar {
+  background: #eceae9;
 }
 
 .social-bar .content {
@@ -887,7 +896,8 @@ a.tw:before {
 
 /*============================ GARDENS PAGE ============================*/
 
-.node-type-garden-landing-page h1#page-title {
+.node-type-garden-landing-page h1#page-title,
+h1#page-title {
     display: none;
 }
 
@@ -1078,7 +1088,6 @@ div#sidr-1 p {
 
 .section-project .content {
     margin: 0 auto;
-    max-width: 1075px;
     padding: 80px 15px;
     overflow: hidden;
 }
@@ -1096,8 +1105,13 @@ div#sidr-1 p {
 
 /*garden tours*/
 
+.group-tours {
+    padding-left: 15px;
+    background: #eceae9;
+}
+
 .group-tours .field-name-field-tours {
-    margin: 40px 0;
+    padding: 0 15px;
 }
 
 .field-name-field-sticker {
@@ -1138,14 +1152,23 @@ div#sidr-1 p {
     margin-bottom: 20px;
 }
 
-.group-column2-1 {
+.group-tours .group-column2-1 {
     margin-left: 0;
+}
+
+.group-tours .group-column2-2 {
+    line-height: 1.75;
 }
 
 .section-tour {
     border-style: solid;
     border-bottom: 2px solid rgba(0, 0, 0, .3);
     padding: 50px 0 40px 0;
+    position: relative;
+}
+
+.group-tours .field-item:last-child .section-tour {
+    border: 0;
 }
 
 .section-tour ul.links {
@@ -1158,13 +1181,12 @@ div#sidr-1 p {
 
 .group-tours .field-label {
     float: left;
-    padding-right: 5px;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
 .group-tours h3.field-label {
     margin: 0;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 .group-tours .field-name-field-ticket-prices .field-label {
@@ -1176,6 +1198,75 @@ div#sidr-1 p {
     padding-bottom: 20px;
 }
 
+/*google map*/
+
+.gmap-control {
+    height: 0 !important;
+    padding: 25%;
+    width: 100%;
+    box-sizing: border-box;
+}
 
 
+/*============================ EVENTS PAGE ============================*/
+
+.view-title-banner,
+.views-field-field-hero-background-image {
+    position: relative;
+    min-height: 300px;
+}
+
+.views-field-field-hero-background-image img {
+    display: block;
+}
+
+.view-title-banner span.field-content .title {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 56px;
+}
+
+/*featured events*/
+
+
+
+/*join section*/
+
+.join {
+    background: url(/sites/all/themes/responsive_bartik/images/join-bg.jpg);
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    display: block;
+    min-height: 500px;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    padding: 4% 15px;
+    box-sizing: border-box;
+}
+
+.join h2 {
+    font-size: 40px;
+}
+
+.join p {
+    padding-bottom: 15px;
+}
+
+.join a.options {
+    color: #fff;
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.join a.options:hover {
+    opacity: 1;
+}
 
