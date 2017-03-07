@@ -371,10 +371,17 @@ ul.quicktabs-tabs li.active a {
   margin: 0;
   line-height: 1.3;
 }
-.views-field-city,.views-field-province {
-  display: inline;
+.views-field-city,
+.views-field-province,
+.views-field-field-garden-type,
+.views-field-field-garden-taxonomy {
+  display: inline-block;
   color: #a08453;
   font-size: 14px;
+}
+.views-field-field-garden-type .field-content::after {
+	content: "|";
+	margin-left: 5px;
 }
 .views-field-city span:after{
 	content: ",";
