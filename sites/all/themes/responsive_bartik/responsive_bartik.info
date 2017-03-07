@@ -15,6 +15,7 @@ stylesheets[all][] = css/entity.css
 stylesheets[all][] = css/field.css
 stylesheets[all][] = css/text.css
 stylesheets[all][] = css/colors.css
+stylesheets[all][] = css/membershiptable.css
 stylesheets[all][] = css/brent.css
 stylesheets[all][] = css/hannah.css
 stylesheets[print][] = css/print.css
