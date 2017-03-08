@@ -1,1 +1,23 @@
 .node{}
+
+
+/* give page styling */
+#node-6 .field-items{
+	display:flex;
+	flex-flow:row wrap
+}
+#node-6 .field-item{
+	flex:1;
+	min-width:33%;
+	border-bottom:1px solid gray;
+}
+#node-6 .field-item:nth-of-type(1),
+#node-6 .field-item:nth-of-type(2){
+	min-width:50%;
+}
+#node-6 .field-item .field-item{
+	border:none;
+}
+#node-6 .col{
+	width:100%;
+}
