@@ -39,6 +39,68 @@ body,
     padding: 0px 15px;
 }
 
+/*banner title*/
+
+.node-type-garden-landing-page h1#page-title,
+h1#page-title {
+    display: none;
+}
+
+.title {
+    z-index: 1;
+    position: relative;
+}
+
+.hero:after {
+  content: "";
+  background-color: rgba(0,0,0,.15);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.view-title-banner {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 56px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 40px 0;
+}
+
+.views-field-field-hero-background-image img {
+    display: block;
+}
+
+.field-name-field-hero-background-image img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    display: block;
+    min-height: 550px;
+}
+
+.group-hero {
+    position: relative;
+    color: #fff;
+}
+
+.banner-text-overlay {
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
 /* FORM ELEMENT DESIGN */
 input.form-text,
 input.form-submit,
@@ -225,7 +287,6 @@ input.form-submit:active{
     min-height: 400px;
 }
 
-.views-field-field-hero-background-image:after,
 .field-name-field-homepage-slider-image:after {
   content: "";
   background-color: rgba(0,0,0,.15);
@@ -896,48 +957,6 @@ a.tw:before {
 
 /*============================ GARDENS PAGE ============================*/
 
-.node-type-garden-landing-page h1#page-title,
-h1#page-title {
-    display: none;
-}
-
-.field-name-field-hero-background-image img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    display: block;
-    min-height: 550px;
-}
-
-.group-hero {
-    position: relative;
-    color: #fff;
-}
-
-.banner-text-overlay {
-  	margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 80px;
-    z-index: 2;
-    box-sizing: border-box;
-}
-
-.field-name-field-hero-background-image:after {
-  content: "";
-  background-color: rgba(0,0,0,.15);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
 .field-name-title-field {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 56px;
@@ -1013,6 +1032,7 @@ span.fn {
 div#sidr-wrapper-1 {
     text-align: right;
     padding: 15px;
+    background: #2f3236;
 }
 
 div#sidr-1 {
@@ -1047,10 +1067,14 @@ div#sidr-1 p {
 }
 
 .node-type-garden-landing-page .field-type-text-with-summary img {
+    vertical-align: middle;
+}
+
+.node-type-garden-landing-page .field-type-text-with-summary a {
     padding-right: 50px;
 }
 
-.node-type-garden-landing-page .field-type-text-with-summary img:last-child {
+.node-type-garden-landing-page .field-type-text-with-summary a:last-child {
     padding-right: 0px;
 }
 
@@ -1073,12 +1097,23 @@ div#sidr-1 p {
     margin: 0 0 0 20px;
 }
 
-.group-project-info h1 {
+.group-project-info h2 {
     margin-top: 0;
+    line-height: 1.25;
 }
 
-.group-project-slider .flexslider .slides img {
-    max-height: 422px;
+.section-project .field-name-field-project-description p {
+    padding: 0 0 20px 0;
+    font-size: 18px;
+}
+
+/*project slideshow*/
+
+.imagestyle-garden-projects .slides img {
+    width: 100%;
+    height: initial;
+    object-fit: none;
+    min-height: auto;
 }
 
 .group-project-slider .flex-control-nav {
@@ -1090,11 +1125,6 @@ div#sidr-1 p {
     margin: 0 auto;
     padding: 80px 15px;
     overflow: hidden;
-}
-
-.section-project .field-name-field-project-description p {
-    padding: 0 0 20px 0;
-    font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1210,33 +1240,12 @@ div#sidr-1 p {
 
 /*============================ EVENTS PAGE ============================*/
 
-.view-title-banner,
-.views-field-field-hero-background-image {
-    position: relative;
-    min-height: 300px;
-}
-
-.views-field-field-hero-background-image img {
-    display: block;
-}
-
-.view-title-banner span.field-content .title {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-family: "Merriweather Sans", sans-serif;
-    font-size: 56px;
-}
-
 /*featured events*/
 
-.events .featured .view-content {
+.events.featured .view-content {
     padding: 75px 15px;
     overflow: hidden;
+    background: #fff;
 }
 
 .featured .views-field-field-event-thumbnail {
@@ -1260,6 +1269,10 @@ div#sidr-1 p {
     padding: 15px;
 }
 
+.events .views-exposed-widgets {
+    margin: 0;
+}
+
 .views-widget-filter-field_event_date_value .container-inline-date {
     clear: none;
 }
@@ -1269,6 +1282,10 @@ div#sidr-1 p {
 }
 
 .views-exposed-form .views-widget-filter-field_event_date_value  label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  color: rgba(53, 57, 62, 0.7);
   display: inline-block;
   float: left;
   line-height: 1;
@@ -1289,8 +1306,92 @@ div#sidr-1 p {
 .form-item-field-event-date-value-value-date:after {
     content: '\f0d7';
     font-family: 'fontawesome';
-    font-size: 16px;
+    font-size: 50px;
     line-height: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #c0c0c1;
+}
+
+.form-item-field-event-date-value-value-date {
+    position: relative;
+}
+
+.views-widget-filter-field_garden_taxonomy_tid {
+    float: none !important;
+    text-align: center;
+    background: #f2f2f2;
+    padding: 50px 0 !important;
+}
+
+.form-item .form-type-bef-link {
+    text-align: center;
+    display: inline-block;
+    padding: 15px 0;
+}
+
+.form-item .form-type-bef-link a {
+    color: rgba(53, 57, 62, 0.7);
+    background: #d7d7d8;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.form-item .form-type-bef-link a:hover,
+.form-item .form-type-bef-link a.active {
+    background: #98b523;
+    color: #fff;
+}
+
+/*search filter*/
+
+.view-events.latest .views-exposed-widgets {
+    background: #fff;
+}
+
+.view-events.latest {
+    background: #f2f2f2;
+}
+
+.view-events.latest .views-submit-button {
+    display: none;
+}
+
+.view-events.latest .view-content {
+    max-width: 1290px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.view-events.latest .views-field-field-event-date {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.view-events.latest .views-field-title a {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 22px;
+    color: #35393e;
+}
+
+.view-events.latest .views-field.views-field-title-1,
+.view-events.latest .views-field-city, 
+.view-events.latest .views-field-province, 
+.view-events.latest .views-field-field-garden-type, 
+.view-events.latest .views-field-field-garden-taxonomy {
+    display: inline-block;
+    font-size: 14px;
+    color: #9d9b96;
+}
+
+.view-events.latest .event.item.col.span-3-of-12 {
+    margin-bottom: 5%;
+}
+
+.view-events.latest .views-field-field-event-thumbnail {
+    margin-bottom: 20px;
 }
 
 /*join section*/
