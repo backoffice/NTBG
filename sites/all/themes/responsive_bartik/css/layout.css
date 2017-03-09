@@ -46,7 +46,8 @@ h1#page-title {
     display: none;
 }
 
-.title {
+.title,
+.view-title-banner .view-content {
     z-index: 1;
     position: relative;
 }
@@ -69,6 +70,7 @@ h1#page-title {
     text-align: center;
     margin: 0;
     padding: 40px 0;
+    position: relative;
 }
 
 .views-field-field-hero-background-image img {
@@ -99,6 +101,25 @@ h1#page-title {
     top: 80px;
     z-index: 2;
     box-sizing: border-box;
+}
+
+.views-field-field-sub-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 38px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.views-field-field-heading-links a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.views-field-field-heading-links a:after {
+    content: '\f105';
+    font-family: "fontawesome";
+    padding-left: 5px;
 }
 
 /* FORM ELEMENT DESIGN */
@@ -1078,6 +1099,17 @@ div#sidr-1 p {
     padding-right: 0px;
 }
 
+.field-name-field-badges {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.field-name-field-badges .field-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
 @media all and (max-width: 550px) {
   .node-type-garden-landing-page .field-type-text-with-summary img {
     padding: 0;
@@ -1363,6 +1395,15 @@ div#sidr-1 p {
     max-width: 1290px;
     margin: 0 auto;
     overflow: hidden;
+    padding: 0 15px;
+}
+
+.view-events.latest .col:nth-child(4n+1) {
+    margin-left: 0;
+}
+
+.view-events.latest .col {
+    min-height: 680px;
 }
 
 .view-events.latest .views-field-field-event-date {
@@ -1386,10 +1427,6 @@ div#sidr-1 p {
     color: #9d9b96;
 }
 
-.view-events.latest .event.item.col.span-3-of-12 {
-    margin-bottom: 5%;
-}
-
 .view-events.latest .views-field-field-event-thumbnail {
     margin-bottom: 20px;
 }
@@ -1398,11 +1435,12 @@ div#sidr-1 p {
 
 .pager {
     background: #d7d7d8;
-    padding: 15px;
+    padding: 15px 0;
     max-width: 1290px;
     margin: 0 auto;
     border-radius: 5px;
     text-align: center;
+    margin-top: 40px;
     margin-bottom: 80px;  
 }
 
@@ -1449,4 +1487,115 @@ div#sidr-1 p {
 .join a.options:hover {
     opacity: 1;
 }
+
+
+/*breadfruit landing page*/
+
+.node-type-breadfruit-landing-page .hero {
+    padding: 80px 15px;
+}
+
+@media all and (max-width: 800px) {
+  .banner-text-overlay {
+      float: left;
+  }
+  .view-title-banner {
+      font-size: 38px;
+  }
+  .views-field-field-sub-heading {
+      font-size: 24px;
+  }
+}
+
+/*sub menu*/
+
+.menu-name-menu-breadfruit .menu {
+    position: relative;
+    overflow: hidden;
+    background: #8d704d;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-name-menu-breadfruit .menu ul {
+    display: inline;
+}
+
+.menu-name-menu-breadfruit .menu li {
+    display: inline-block;
+    padding: 0;
+}
+
+.menu-name-menu-breadfruit .menu p,
+.menu-name-menu-breadfruit .menu li a {
+    color: #fff;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+/*mobile menu*/
+
+div#sidr-wrapper-2 {
+    background: #8d704d;
+}
+
+a#sidr-2-button {
+    padding: 15px;
+    display: inherit;
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+}
+
+div#sidr-2 {
+    background: #8d704d;
+    -webkit-box-shadow: inset 0 0 5px 5px #876b4a;
+    -moz-box-shadow: inset 0 0 5px 5px #876b4a;
+    box-shadow: inset 0 0 5px 5px #876b4a;
+}
+
+div#sidr-2 a {
+    color: #fff;
+}
+
+div#sidr-2 a:hover {
+    opacity: 0.7;
+}
+
+/*main content*/
+
+.node-type-breadfruit-landing-page #main #content .section {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 60px 15px;
+}
+
+.node-type-breadfruit-landing-page div#content-below {
+    clear: both;
+}
+
+.node-breadfruit-landing-page .section-wrap {
+    padding: 0 20px 0 0;
+}
+
+#node-1 .col, #node-6 .col {
+    padding: 0;
+    margin: 0;
+}
+
+.breadfruit-landing .field-name-field-multifield-heading {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 22px;
+    color: #a17d54;
+    margin-top: 30px;
+}
+
+.breadfruit-landing .field-name-field-multifield-links a {
+    color: #35393e;
+}
+
+.breadfruit-landing .field-name-field-multifield-links {
+    margin-bottom: 40px;
+}
+
 
