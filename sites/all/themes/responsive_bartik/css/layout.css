@@ -52,7 +52,12 @@ h1#page-title {
     position: relative;
 }
 
-.hero:after {
+#block-views-title-banner-interior-header {
+  position: relative;
+  background-size: cover;
+}
+
+#block-views-title-banner-interior-header:after {
   content: "";
   background-color: rgba(0,0,0,.15);
   position: absolute;
@@ -64,13 +69,16 @@ h1#page-title {
 }
 
 .view-title-banner {
+    position: relative;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.title {
     font-family: "Merriweather Sans", sans-serif;
     font-size: 56px;
-    color: #fff;
     text-align: center;
     margin: 0;
-    padding: 40px 0;
-    position: relative;
 }
 
 .views-field-field-hero-background-image img {
@@ -103,11 +111,13 @@ h1#page-title {
     box-sizing: border-box;
 }
 
-.views-field-field-sub-heading {
+.views-field-field-sub-heading,
+.sub-heading {
     font-family: "Open Sans", sans-serif;
     font-size: 38px;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .views-field-field-heading-links a {
@@ -120,6 +130,86 @@ h1#page-title {
     content: '\f105';
     font-family: "fontawesome";
     padding-left: 5px;
+}
+
+/*BASIC PAGE*/
+
+/*sub menu*/
+
+.menu-level-2 .menu {
+    position: relative;
+    overflow: hidden;
+    background: #2f3236;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-level-2 .menu ul {
+    display: inline;
+}
+
+.menu-level-2 .menu li {
+    display: inline-block;
+    padding: 0;
+}
+
+.menu-level-2 .menu p,
+.menu-level-2 .menu li a {
+    color: #fff;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+/*mobile menu*/
+
+div#sidr-wrapper-3 {
+    background: #2f3236;
+}
+
+a#sidr-3-button {
+    padding: 15px;
+    display: inherit;
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+}
+
+div#sidr-3 {
+    background: #2f3236;
+    color: #98b523;
+    -webkit-box-shadow: inset 0 0 5px 5px #2A2D30;
+    -moz-box-shadow: inset 0 0 5px 5px #2A2D30;
+    box-shadow: inset 0 0 5px 5px #2A2D30;
+}
+
+div#sidr-3 a {
+    color: #fff;
+}
+
+div#sidr-3 a:hover {
+    opacity: 0.7;
+}
+
+/*basic featured block*/
+
+.group-body-wrapper {
+    padding: 60px 0;
+}
+
+.group-featured-block {
+    background: #35393e;
+    color: #fff;
+}
+
+.group-project-info p {
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.page-node-28 .group-body-wrapper,
+.page-node-28 .group-body-section {
+    max-width: none;
+    padding: 0;
 }
 
 /* FORM ELEMENT DESIGN */
@@ -1130,13 +1220,15 @@ div#sidr-1 p {
     margin: 0 0 0 20px;
 }
 
-.group-project-info h2 {
-    margin-top: 0;
+.group-project-info .field-name-field-subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
     line-height: 1.25;
 }
 
 .section-project .field-name-field-project-description p {
-    padding: 0 0 20px 0;
     font-size: 18px;
 }
 
@@ -1192,6 +1284,13 @@ div#sidr-1 p {
     width: 100%;
 }
 
+.field-name-field-tour-visitor-info-link.button a,
+.field-name-field-book-tour-link.button a {
+    width: 100%;
+    margin: 10px 0;  
+}
+
+
 .field-name-field-tour-visitor-info-link.button a {
     background: #35393e;
     border-color: #35393e;
@@ -1201,25 +1300,25 @@ div#sidr-1 p {
     font-size: 28px;
 }
 
-.group-tours .field-name-field-tour-subtitle {
+.field-name-field-tour-subtitle {
     font-size: 14px;
     padding-bottom: 20px;
 }
 
-.group-tours .field-name-field-tour-description {
+.field-name-field-tour-description {
     font-size: 16px;
     padding-right: 20px;
 }
 
-.group-tours .field-name-field-tour-description p {
+.field-name-field-tour-description p {
     margin-bottom: 20px;
 }
 
-.group-tours .group-column2-1 {
+.group-column2-1 {
     margin-left: 0;
 }
 
-.group-tours .group-column2-2 {
+.group-column2-2 {
     line-height: 1.75;
 }
 
@@ -1230,7 +1329,7 @@ div#sidr-1 p {
     position: relative;
 }
 
-.group-tours .field-item:last-child .section-tour {
+.field-item:last-child .section-tour {
     border: 0;
 }
 
@@ -1242,22 +1341,27 @@ div#sidr-1 p {
     padding: 0;
 }
 
-.group-tours .field-label {
+.group-tours .field-label,
+.view-tours .field-label {
     float: left;
     font-family: 'Merriweather Sans', sans-serif;
 }
 
-.group-tours h3.field-label {
+.group-tours h3.field-label,
+.view-tours h3.field-label {
     margin: 0;
     padding-right: 5px;
 }
 
-.group-tours .field-name-field-ticket-prices .field-label {
+.group-tours .field-name-field-ticket-prices .field-label,
+.view-tours .field-name-field-ticket-prices .field-label {
     float: none;
 }
 
 .group-tours .field-name-field-departure,
-.group-tours .field-name-field-tour-duration {
+.group-tours .field-name-field-tour-duration,
+.view-tours .field-name-field-departure,
+.view-tours .field-name-field-tour-duration, {
     padding-bottom: 20px;
 }
 
@@ -1288,6 +1392,28 @@ div#sidr-1 p {
 .events .featured .views-field-title h2, 
 .events .featured .views-field-title h2 a {
     font-size: 32px;
+}
+
+/*responsive grid*/
+@media all and (max-width: 820px) {
+    .span-3-of-12 {
+      width: 100% !important;
+    }
+    .view-events.latest  .col {
+      margin: 1% 0 5% 0%;
+    }
+}
+
+@media all and (max-width: 1100px) {
+    .view-events.latest .col:nth-child(2n+1) {
+      margin-left: 0;
+    }
+    .view-events.latest .col {
+      min-height: 800px;
+    }
+    .span-3-of-12 {
+      width: 49.2%;
+    }
 }
 
 /*search events*/
@@ -1604,4 +1730,43 @@ div#sidr-2 a:hover {
     margin-bottom: 40px;
 }
 
+/*news view page, garden interior*/
+
+.node-news .field-name-body,
+.node-garden-interior-page .field-name-body {
+    padding: 20px 0 60px;
+}
+
+.node-news span.submitted-by {
+    line-height: 2.5;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9d9b96;
+}
+
+/*tours*/
+
+.view-tours .view-content {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+}
+
+.view-tours .content {
+    position: relative;
+}
+
+.view-tours .field-name-field-sticker {
+    top: -15px;
+    left: -20px;
+}
+
+.view-tours .views-row {
+    padding: 0 15px;
+}
+
+.view-tours .field-name-title-field {
+    font-size: 48px;
+}
 
