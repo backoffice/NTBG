@@ -163,6 +163,7 @@ a.button.secondary{
 .container-inline div, .container-inline label{
 	vertical-align: top;
 }
+.green.button:after,
 .button a:after {
     font-family: "fontawesome";
     content: '\f105';
@@ -1333,6 +1334,8 @@ div#sidr-1 p {
   border-style: none;
   background: transparent;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 
 .form-item-field-event-date-value-value-date:after {
@@ -1433,25 +1436,28 @@ div#sidr-1 p {
 
 /*pagination*/
 
-.pager {
+.pager a {
+    color: #35393e;
     background: #d7d7d8;
-    padding: 15px 0;
+    line-height: 3;
+    border-radius: 5px;
     max-width: 1290px;
     margin: 0 auto;
-    border-radius: 5px;
+    padding: 0 15px;
     text-align: center;
     margin-top: 40px;
-    margin-bottom: 80px;  
-}
-
-.pager a {
-    color: #35393e;  
+    margin-bottom: 80px;
+    display: block;  
 }
 
 .pager a:after {
     content: '\f107';
     font-family: 'fontawesome';
     padding-left: 5px;
+}
+
+ul.pager {
+    padding: 0 15px;
 }
 
 /*join section*/
