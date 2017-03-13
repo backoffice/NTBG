@@ -68,6 +68,9 @@ transition: all 0.15s ease-in-out;
 .garden-menu ul.submenu li:first-child a{
 	padding-top: 20px;
 }
+#block-menu-menu-header-actions li{
+	float: left;
+}
 /* MENU - GARDEN MENU */
 @media screen and (min-width:960px){
 	.menu-toggle{
@@ -402,4 +405,10 @@ ul.quicktabs-tabs li.active a {
 	.quicktabs-wrapper .views-row {
 	  border-bottom: 2px solid #E5E5E5;
 	}
+}
+
+/* ALL TOURS PAGE */
+.page-garden-tours .all-tours .view-content > h3 {
+  margin-left: 15px;
+  margin-top: 40px;
 }
