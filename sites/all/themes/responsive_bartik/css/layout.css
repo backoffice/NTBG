@@ -1742,6 +1742,18 @@ div#sidr-2 a:hover {
     margin-bottom: 40px;
 }
 
+.breadfruit-landing .group-multifield-content-wrapper {
+    overflow: hidden;
+}
+
+.breadfruit-landing .group-column1.field-group-div.col.span-5-of-12,
+.breadfruit-landing .group-column2.field-group-div.col.span-7-of-12 {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+} 
+
+
 /*news view page, garden interior*/
 
 .node-news .field-name-body,
@@ -1793,7 +1805,7 @@ div#sidr-2 a:hover {
     position: relative;
     background: #ece6dd;
     overflow: hidden;
-    padding: 5em 0;
+    padding: 5em 0 12em;
 }
 
 .involvement .col {
@@ -1806,7 +1818,7 @@ div#sidr-2 a:hover {
     margin-left: 0;
 }
 
-.node-type-breadfruit-landing-page h2 {
+#block-block-10 h2 {
     text-align: center;
     color: #a17d54;
     margin: 0 0 40px;
@@ -1851,6 +1863,55 @@ img.bd-logo {
 
 /*donate block*/
 
-.donate {
+.breadfruit.donate {
+    background: url(/sites/all/themes/responsive_bartik/images/breadfruit-bg.png);
+    padding: 140px 0 100px;
+    text-align: center;
+    color: #fff;
     clear: both;
+    position: relative;
+}
+
+.breadfruit.donate .content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.breadfruit.donate h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0 0 5px 0;
+}
+
+.breadfruit.donate h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.breadfruit.donate a.button.donate {
+    border: 0;
+    background: #fff;
+    color: #8e704d;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.breadfruit.donate a.button.donate:after {
+    content: '\f105';
+    font-family: 'fontawesome';
+    padding-left: 10px;
+}
+
+.breadfruit.donate img.donate-bf {
+    max-width: 325px;
+    position: absolute;
+    top: -25%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
