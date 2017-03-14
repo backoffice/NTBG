@@ -94,6 +94,11 @@ h2 {
   font-size: 28px;
   font-weight: bold;
 }
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: bold; 
+}
 code,
 pre,
 kbd,

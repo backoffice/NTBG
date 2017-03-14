@@ -1974,3 +1974,35 @@ img.bd-logo {
     right: 0;
     margin: 0 auto;
 }
+
+/*breadfruit interior*/
+
+#block-menu-block-4 h2 {
+    margin: 30px 0;
+}
+
+#block-menu-block-4 h2 a,
+.node-type-breadfruit-interior-page h3 {
+    color: #a17d54;
+}
+
+.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu {
+    border-radius: 4px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu li {
+    display: block;
+    padding: 10px 0;
+}
+
+.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu li a {
+    color: #35393e;
+}
+
+.node-type-breadfruit-interior-page .field-name-body {
+    margin: 6em 0 6em 3em;
+}
+
+
