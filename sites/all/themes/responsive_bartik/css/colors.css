@@ -49,8 +49,11 @@ a:active {
   color: #97b420;
 }
 .sidebar .block {
-  background-color: #f6f6f2;
-  border-color: #f9f9f9;
+/*  background-color: #f2f2f2;
+  border-color: #f2f2f2;*/
+}
+.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu {
+  background: #ede6de;
 }
 #page-wrapper,
 #footer-wrapper {
