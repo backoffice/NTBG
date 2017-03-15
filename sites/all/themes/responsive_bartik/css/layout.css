@@ -136,7 +136,9 @@ h1#page-title {
     padding-left: 5px;
 }
 
-/*BASIC PAGE*/
+/*=======================================
+============ BASIC PAGE==================
+=======================================*/
 
 /*sub menu*/
 
@@ -201,8 +203,8 @@ div#sidr-3 a:hover {
 }
 
 .group-featured-block {
-    background: #35393e;
-    color: #fff;
+    background: #e9e9e9;
+    color: #35393e;
 }
 
 .group-project-info p {
@@ -384,7 +386,9 @@ input.form-submit:active{
 	background-color: #98b523
 }
 
-
+/*=============================================
+=============== Home Page =====================
+=============================================*/
 
 /* HOME FLEXSLIDER */
 .flexslider{
@@ -1601,7 +1605,7 @@ ul.pager {
     padding: 0 15px;
 }
 
-/*join section*/
+/*============================ JOIN BLOCK ============================*/
 
 .join {
     background: url(/sites/all/themes/responsive_bartik/images/join-bg.jpg);
@@ -1636,7 +1640,7 @@ ul.pager {
 }
 
 
-/*breadfruit landing page*/
+/*============================ BREADFRUIT LANDING PAGE ============================*/
 
 .node-type-breadfruit-landing-page .hero {
     padding: 80px 15px;
@@ -1711,7 +1715,8 @@ div#sidr-2 a:hover {
 
 /*main content*/
 
-.node-type-breadfruit-landing-page #main #content .section {
+.node-type-breadfruit-landing-page #main #content .section,
+.page-node-6 .region-content {
     max-width: 1290px;
     margin: 0 auto;
     padding: 60px 15px;
@@ -1721,8 +1726,9 @@ div#sidr-2 a:hover {
     clear: both;
 }
 
-.node-breadfruit-landing-page .section-wrap {
-    padding: 0 20px 0 0;
+.node-breadfruit-landing-page .entity .section-wrap,
+.page-node-6 .entity .section-wrap {
+    padding: 0 40px 0 0;
 }
 
 #node-1 .col, #node-6 .col {
@@ -1750,7 +1756,9 @@ div#sidr-2 a:hover {
 }
 
 .breadfruit-landing .group-column1.field-group-div.col.span-5-of-12,
-.breadfruit-landing .group-column2.field-group-div.col.span-7-of-12 {
+.breadfruit-landing .group-column2.field-group-div.col.span-7-of-12,
+.page-node-6 .group-column1.field-group-div.col.span-5-of-12,
+.page-node-6 .group-column2.field-group-div.col.span-7-of-12 {
    width: 100%;
    margin: 0;
    padding: 0;
@@ -1768,7 +1776,6 @@ div#sidr-2 a:hover {
   float: left;
   width: 25%;
 }
-
 
 @media all and (max-width: 1000px) {
   .node-breadfruit-landing-page .field-name-field-section > .field-items > .field-item,
@@ -1799,7 +1806,7 @@ div#sidr-2 a:hover {
   }
 }
 
-/*news view page, garden interior*/
+/*============================ NEWS VIEW/GARDEN INTERIOR ============================*/
 
 .node-news .field-name-body,
 .node-garden-interior-page .field-name-body {
@@ -1813,7 +1820,7 @@ div#sidr-2 a:hover {
     color: #9d9b96;
 }
 
-/*tours*/
+/*============================ TOURS ============================*/
 
 .view-tours .view-content {
     max-width: 1290px;
@@ -1844,12 +1851,16 @@ div#sidr-2 a:hover {
 }
 
 
-/*area of focus/involvement*/
+/*============================ AREAS OF FOCUS/INVOLVE BLOCKS ============================*/
+
+.involvement {
+  padding: 0 15px;
+}
 
 /*area of focus*/
 #block-block-7 {
     clear: both;
-    padding: 5em 15px;
+    padding: 5em 0;
     overflow: hidden;
 }
 
@@ -1871,6 +1882,7 @@ div#sidr-2 a:hover {
     position: relative;
     background: #000;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .involvement .col:nth-child(4) {
@@ -1920,7 +1932,7 @@ img.bd-logo {
 }
 
 
-/*donate block*/
+/*============================ DONATE BLOCK ============================*/
 
 .breadfruit.donate {
     background: url(/sites/all/themes/responsive_bartik/images/breadfruit-bg.png);
@@ -1975,7 +1987,7 @@ img.bd-logo {
     margin: 0 auto;
 }
 
-/*breadfruit interior*/
+/*============================ BREADFRUIT INTERIOR ============================*/
 
 #block-menu-block-4 h2 {
     margin: 30px 0;
@@ -2005,4 +2017,88 @@ img.bd-logo {
     margin: 6em 0 6em 3em;
 }
 
+
+/*============================ SUPPORT US PAGE ============================*/
+
+.page-node-6 .view-title-banner {
+    padding: 2em 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.page-node-6 .title {
+    line-height: 1.25;
+}
+
+.page-node-6 .sub-heading {
+    font-size: 14px;
+    margin-top: 35px;
+}
+
+.page-node-6 .sub-heading:before {
+    content: '\f06c';
+    font-family: 'fontawesome';
+    margin-right: 8px;
+}
+
+.page-node-6 .field-name-field-multifield-heading {
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 22px;
+}
+
+.page-node-6 .field-name-field-multifield-links a {
+    color: #35393e;
+}
+
+.page-node-6 .region-content {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 80px 15px;
+}
+
+/* grid system */
+
+.page-node-6 .field-name-field-section > .field-items > .field-item:first-child, 
+.page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(2) {
+  float: left;
+  width: 50%;
+  border-bottom: solid 2px #ece6dd;
+  height: 400px;
+}
+
+.page-node-6 .field-name-field-section > .field-items > .field-item {
+  float: left;
+  width: 33.33%;
+  margin-top: 30px;
+}
+
+.page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(3),
+.page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(4),
+.page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(5) {
+  border-bottom: solid 2px #ece6dd;
+  height: 425px;
+}
+
+@media all and (max-width: 1060px) {
+  .page-node-6 .field-name-field-section > .field-items > .field-item {
+    width: 50%;
+  }
+  .page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(6) {
+    border-bottom: solid 2px #ece6dd;
+    height: 425px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .page-node-6 .field-name-field-section > .field-items > .field-item,
+  .page-node-6 .field-name-field-section > .field-items > .field-item:first-child, 
+  .page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(2) {
+    width: 100%;
+  }
+  .page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(6),
+  .page-node-6 .field-name-field-section > .field-items > .field-item:nth-of-type(7) {
+    border-bottom: solid 2px #ece6dd;
+    height: 425px;
+  }
+}
 
