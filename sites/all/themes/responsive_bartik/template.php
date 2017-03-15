@@ -169,3 +169,8 @@ function responsive_bartik_field__taxonomy_term_reference($variables)
 
   return $output;
 }
+function responsive_bartik_preprocess_page(&$variables) {
+  if (!empty($variables['node']) && !empty($variables['node']->type)) {
+    $variables['theme_hook_suggestions'][] = 'page__node__' . $variables['node']->type;
+  }
+}
