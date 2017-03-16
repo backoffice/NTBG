@@ -2105,8 +2105,7 @@ img.bd-logo {
     padding: 0;
 }
 
-.view-news .featured,
-.view-news .view-content {
+.view-news .featured {
   max-width: 1290px;
   margin: 0 auto;
   padding: 50px 15px;
