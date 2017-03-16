@@ -1498,11 +1498,11 @@ div#sidr-1 p {
     position: relative;
 }
 
-.views-widget-filter-field_garden_taxonomy_tid {
-    float: none !important;
+.events .views-widget-filter-field_garden_taxonomy_tid {
+    float: none;
     text-align: center;
     background: #f2f2f2;
-    padding: 50px 0 !important;
+    padding: 50px 0;
 }
 
 .form-item .form-type-bef-link {
@@ -1883,6 +1883,7 @@ div#sidr-2 a:hover {
     background: #000;
     overflow: hidden;
     border-radius: 4px;
+    height: 225px;
 }
 
 .involvement .col:nth-child(4) {
@@ -1911,24 +1912,19 @@ img.bd-logo {
     right: 0;
 }
 
-.involvement .img-wrpr img {
-    opacity: 0.7;
-  transition: opacity .3s ease-in-out, transform 3s ease-in-out;
-    transform: scale(1.005);
-    object-fit: cover;
-    width: 100%;
-    height: 225px;
+.involvement .col img {
+  opacity: 0.7;
+  object-fit: cover;
 }
 
-.involvement .col:hover .img-wrpr img {
-  transform: scale(1.15);
-    opacity: .55;
+.involvement .col:hover img {
+  opacity: .55;
 }
 
-.involvement a.img-wrpr {
-    display: block;
-    overflow: hidden;
-    line-height: 0;
+.involvement .img-wrpr {
+  display: block;
+  overflow: hidden;
+  line-height: 0;
 }
 
 
@@ -2101,3 +2097,48 @@ img.bd-logo {
     height: 425px;
   }
 }
+
+/*============================ NEWS PAGE ============================*/
+
+#node-43 .max-container, #node-43 .section-wrap {
+    max-width: 100%;
+    padding: 0;
+}
+
+.view-news .featured,
+.view-news .view-content {
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 50px 15px;
+  overflow: hidden;
+  clear: both;
+}
+
+.view-news .view-filters {
+  clear: both;
+  overflow: hidden;
+  padding: 0;
+}
+
+.view-news .views-exposed-form .views-widget-filter-field_news_type_tid,
+.view-news .views-widget-filter-field_garden_taxonomy_tid {
+  background: #f2f2f2;
+  text-align: center;
+  float: none;
+  padding: 15px;
+}
+
+.view-news .views-exposed-form .views-exposed-widgets {
+  background: #f2f2f2;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/*typography*/
+
+.view-news.featured .views-field-title h2,
+.view-news.featured .views-field-title h2 a {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
