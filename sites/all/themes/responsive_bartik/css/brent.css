@@ -275,6 +275,7 @@ a.image-wrapper{
 }
 .garden-callout h2 {
   margin-bottom: 0;
+  font-size: 16px;
 }
 @media all and (max-width:959px){
 	.homepage.gardens .one-fifth{
