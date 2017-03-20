@@ -270,6 +270,7 @@ a.button.secondary{
 
 /* HOVER EFFECTS */
 .logo a:hover,
+.logo a:focus,
 .map-icon a:hover{
   opacity: 1;
 }
