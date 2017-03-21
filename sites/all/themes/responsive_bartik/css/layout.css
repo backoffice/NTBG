@@ -1666,7 +1666,7 @@ ul.pager {
 
 /*sub menu*/
 
-.menu-name-menu-breadfruit .menu {
+.menu-level-1 .menu {
     position: relative;
     overflow: hidden;
     background: #8d704d;
@@ -1674,17 +1674,17 @@ ul.pager {
     padding: 20px;
 }
 
-.menu-name-menu-breadfruit .menu ul {
+.menu-level-1 .menu ul {
     display: inline;
 }
 
-.menu-name-menu-breadfruit .menu li {
+.menu-level-1 .menu li {
     display: inline-block;
     padding: 0;
 }
 
-.menu-name-menu-breadfruit .menu p,
-.menu-name-menu-breadfruit .menu li a {
+.menu-level-1 .menu p,
+.menu-level-1 .menu li a {
     color: #fff;
     padding: 20px 10px;
     cursor: pointer;
@@ -2022,19 +2022,24 @@ img.bd-logo {
     color: #a17d54;
 }
 
-.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu {
+.node-type-breadfruit-interior-page .sidebar .menu-level-3 {
+    padding: 15px;
     border-radius: 4px;
     text-align: left;
-    margin-bottom: 40px;
 }
 
-.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu li {
+.node-type-breadfruit-interior-page .sidebar .menu-level-3 .menu li {
     display: block;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
-.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu li a {
+li.expanded ul.menu li.leaf {
+   margin: 0 15px;
+}
+
+.node-type-breadfruit-interior-page .sidebar .menu-level-3 .menu li a {
     color: #35393e;
+    cursor: pointer;
 }
 
 .node-type-breadfruit-interior-page .field-name-body {

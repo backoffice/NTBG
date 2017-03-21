@@ -49,10 +49,10 @@ a:active {
   color: #97b420;
 }
 .sidebar .block {
-/*  background-color: #f2f2f2;
+/*background-color: #f2f2f2;
   border-color: #f2f2f2;*/
 }
-.node-type-breadfruit-interior-page .sidebar .menu-name-menu-breadfruit .menu {
+.node-type-breadfruit-interior-page .sidebar .menu-level-3 {
   background: #ede6de;
 }
 #page-wrapper,
