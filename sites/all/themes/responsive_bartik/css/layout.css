@@ -1397,7 +1397,7 @@ div#sidr-1 p {
 
 /*tour taxonomy*/
 
-#edit-field-garden-taxonomy-tid-wrapper {
+.page-garden-tours #edit-field-garden-taxonomy-tid-wrapper {
     text-align: center;
     float: none;
     background: #f2f2f2;
@@ -2186,6 +2186,18 @@ li.expanded ul.menu li.leaf {
   background: #f2f2f2;
   padding: 10px 0;
   margin: 0;
+}
+
+.view-news #edit-field-garden-taxonomy-tid-wrapper {
+  margin-top: 0;
+}
+
+.view-news .view-content {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
 }
 
 /*typography*/
