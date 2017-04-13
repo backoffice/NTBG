@@ -48,6 +48,10 @@ body,
 h1#page-title {
     display: none;
 }
+.node-type-breadfruit-interior-page h1#page-title{
+	color: #a17d54;
+	display: block;
+}
 
 .title,
 .view-title-banner .view-content {
@@ -775,6 +779,13 @@ span.social-name {
   padding: 10px 10px;
 }
 
+@media all and (max-width: 960px){
+	.one-sidebar #sidebar-first, .one-sidebar #sidebar-second{
+		display: none;
+		width: 100%;
+	}
+
+}
 @media all and (min-width: 560px) and (max-width: 850px) {
 
   #sidebar-first,
@@ -830,7 +841,7 @@ span.social-name {
   }
 }
 
-@media all and (min-width: 851px) {
+@media all and (min-width: 961px) {
 
   #header div.section,
   #featured div.section,
@@ -861,13 +872,13 @@ span.social-name {
     width: 50%;
   }
   .one-sidebar #content {
-    width: 75%;
+    width: 70%;
   }
   .no-sidebars #content {
     width: 100%;
   }
   .sidebar-first #content {
-    margin-left: 25%; /* LTR */
+    margin-left: 30%; /* LTR */
     margin-right: 0; /* LTR */
   }
   .sidebar-second #content {
@@ -875,7 +886,7 @@ span.social-name {
     margin-left: 0; /* LTR */
   }
   #sidebar-first {
-    width: 25%;
+    width: 30%;
     margin-left: -100%; /* LTR */
   }
   #sidebar-second {
@@ -2054,7 +2065,19 @@ li.expanded ul.menu li.leaf {
 }
 
 .node-type-breadfruit-interior-page .field-name-body {
-    margin: 6em 0 6em 3em;
+    margin: 0 0 6em 3em;
+}
+.breadfruit-horizontal-nav .menu-name-menu-breadfruit > ul.menu li > ul,
+.submenu-bar .menu-name-main-menu > ul.menu li > ul{
+	display: none;
+}
+.sidr ul li ul li:hover > a, .sidr ul li ul li:hover > span, .sidr ul li ul li.active > a, .sidr ul li ul li.active > span, .sidr ul li ul li.sidr-class-active > a, .sidr ul li ul li.sidr-class-active > span{
+	box-shadow: none;
+}
+@media screen and (max-width: 960px){
+	.node-type-breadfruit-interior-page .field-name-body{
+		margin: 0;
+	}
 }
 
 
@@ -2213,4 +2236,23 @@ li.expanded ul.menu li.leaf {
 	padding: 20px;
 	background-color: #EDE6DE;
 	border-radius: 5px;
+}
+.sidebar-menu-block li a.active{
+	color: #a17d54;
+}
+.sidebar-menu-block li a{
+	color: #35393e;
+	padding: 3px 0;
+	display: block;
+	font-size: 14px;
+}
+.sidebar-menu-block li.expanded ul.menu li.leaf{
+	margin: 0;
+	padding: 0;
+}
+.sidebar-first .section-wrap{
+	padding: 0;
+}
+.sidebar-first .group-body-wrapper{
+	padding-top: 0;
 }
