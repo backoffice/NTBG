@@ -183,6 +183,10 @@
 
     <?php print $breadcrumb; ?>
 
+     <?php if ($page['sidebar_first'] || $page['sidebar_second']): ?>
+      <div class="sidebar-max-container"><div class="sidebar-content-wrapper">
+    <?php endif; ?>
+
     <div id="content" class="column"><div class="section">
       <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
       
@@ -227,9 +231,13 @@
         <?php print render($page['sidebar_second']); ?>
       </div></div> <!-- /.section, /#sidebar-second -->
     <?php endif; ?>
+    
+     <?php if ($page['sidebar_first'] || $page['sidebar_second']): ?>
+      </div></div> <!-- /.section, /#sidebar-first -->
+    <?php endif; ?>
 
 	
-		<?php if ($content_below): ?>
+		<?php if ($page[content_below]): ?>
 			<div id="content-below"><div class="section clearfix">
 			  <?php print render($page['content_below']); ?>
 			</div></div> <!-- /.section, /#content_below -->

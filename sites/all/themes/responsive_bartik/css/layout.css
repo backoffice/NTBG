@@ -2256,3 +2256,16 @@ li.expanded ul.menu li.leaf {
 .sidebar-first .group-body-wrapper{
 	padding-top: 0;
 }
+.sidebar-max-container{
+	max-width: 1290px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.sidebar-content-wrapper{
+	padding: 0 15px;
+}
+@media screen and (min-width:961px){
+.sidebar-first #content > .section{
+	margin-left: 3em;
+}
+}
