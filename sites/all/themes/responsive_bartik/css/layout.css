@@ -143,7 +143,7 @@ h1#page-title {
 
 /*sub menu*/
 
-.menu-level-2 .menu {
+.submenu-bar .menu-level-2 .menu {
     position: relative;
     overflow: hidden;
     background: #2f3236;
@@ -151,17 +151,17 @@ h1#page-title {
     padding: 20px;
 }
 
-.menu-level-2 .menu ul {
+.submenu-bar .menu-level-2 .menu ul {
     display: inline;
 }
 
-.menu-level-2 .menu li {
+.submenu-bar .menu-level-2 .menu li {
     display: inline-block;
     padding: 0;
 }
 
-.menu-level-2 .menu p,
-.menu-level-2 .menu li a {
+.submenu-bar .menu-level-2 .menu p,
+.submenu-bar .menu-level-2 .menu li a {
     color: #fff;
     padding: 20px 10px;
     cursor: pointer;
@@ -2208,3 +2208,9 @@ li.expanded ul.menu li.leaf {
   padding-bottom: 10px;
 }
 
+/* SIDEBAR MENU */
+.sidebar-menu-block .menu-block-wrapper{
+	padding: 20px;
+	background-color: #EDE6DE;
+	border-radius: 5px;
+}
