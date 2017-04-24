@@ -170,6 +170,13 @@ h1#page-title {
     padding: 20px 10px;
     cursor: pointer;
 }
+.submenu-bar .menu-level-2 li a.active,
+.submenu-bar .menu-level-2 li a.active:hover,
+div#sidr-3 a.sidr-class-active,
+div#sidr-3 a.sidr-class-active:hover{
+	color: #98B523;
+	opacity: 1;
+}
 
 /*mobile menu*/
 
@@ -2246,6 +2253,11 @@ li.expanded ul.menu li.leaf {
 	display: block;
 	font-size: 14px;
 }
+.sidebar-menu-block li a.active,
+.sidebar-menu-block li a.active:hover{
+	color: #8D704D;
+	opacity: 1;
+}
 .sidebar-menu-block li.expanded ul.menu li.leaf{
 	margin: 0;
 	padding: 0;
@@ -2269,3 +2281,112 @@ li.expanded ul.menu li.leaf {
 	margin-left: 3em;
 }
 }
+
+/* ADMIN PAGES */
+.page-user #block-system-main {
+  max-width: 1290px;
+  margin: 60px auto;
+  padding: 0 15px;
+}
+
+/* WYSIWYG IMAGE FLOATS */
+article img.fullwidth{
+	float: none;
+	margin-bottom: 5%;
+	width: 100% !important;
+	height: auto !important;
+}
+article img.floatright{
+	float: right;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	width: 50% !important;
+	height: auto !important;
+}
+article img.floatleft{
+	float: left;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	width: 50% !important;
+	height: auto !important;
+}
+article img.centered{
+	float: none;
+	margin: 5% auto 5%;
+	width: 50% !important;
+	height: auto !important;
+	display: block;
+}
+article img.floatright25{
+	float: right;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	width: 25% !important;
+	height: auto !important;
+}
+article img.floatleft25{
+	float: left;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	width: 25% !important;
+	height: auto !important;
+}
+article img.floatsmall{
+	margin-right: 3%;
+	margin-bottom: 3%;
+	width: 30% !important;
+	height: auto !important;
+}
+@media all and (max-width:640px){
+	article img.fullwidth,
+	article img.floatright,
+	article img.floatleft,
+	article img.centered,
+	article img.floatright25,
+	article img.floatleft25{
+		float: none;
+		margin: 0 0 5% 0;
+		width: 100% !important;
+		height: auto !important;
+	}
+}
+/* END WYSIWYG IMAGE FLOATS */
+
+strong{
+	font-weight: bold;
+}
+article ul,
+article ol{
+	padding: 0 0 0 25px;
+	margin-bottom: 20px;
+}
+article ul li,
+article ol li{
+	padding-left: 10px;
+}
+article ul li{
+	list-style-type: disc;
+}
+article ol li{
+	list-style: l;
+}
+article .row{
+	display: block;
+	background-color: transparent;
+	margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px){
+	article .row{
+		display: flex;
+		background-color: transparent;
+	}
+	article .row .col:first-child{
+		margin-left: 0;
+	}
+	article .row .col{
+		margin: 0 0 0 4%;
+	}
+}
+
+@media screen and (min-width: 768px){}
