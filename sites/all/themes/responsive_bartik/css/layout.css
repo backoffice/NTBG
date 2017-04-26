@@ -1274,9 +1274,9 @@ div#sidr-1 p {
 
 .imagestyle-garden-projects .slides img {
     width: 100%;
-    height: initial;
-    object-fit: none;
-    min-height: auto;
+    object-fit: initial;
+    min-height: 0;
+    height: auto;
 }
 
 .group-project-slider .flex-control-nav {
