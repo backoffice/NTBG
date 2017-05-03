@@ -28,7 +28,9 @@ body,
 }
 .hidden{
 	display: none !important;
-	
+}
+hr{
+	1px solid rgba(0,0,0,.4);
 }
 .max-container {
     max-width: 1290px;
@@ -40,6 +42,9 @@ body,
 }
 #content-below {
   clear: both;
+}
+.focused{
+	max-width: 900px;
 }
 
 /*banner title*/
@@ -257,6 +262,9 @@ a.button,
 	border-color: #98B523;
 	background-color: #98B523;
 	color: #fff;
+}
+#search-block-form input.form-submit{
+	min-width: 0;
 }
 a.button.secondary{
 	border-color: #35393e;
@@ -2378,7 +2386,6 @@ article .row{
 
 @media screen and (min-width: 768px){
 	article .row{
-		display: flex;
 		background-color: transparent;
 	}
 	article .row .col:first-child{
@@ -2387,6 +2394,33 @@ article .row{
 	article .row .col{
 		margin: 0 0 0 4%;
 	}
+	.col.one-fourth{
+		width: 22%;
+	}
 }
 
 @media screen and (min-width: 768px){}
+
+
+
+/* EVENT NODE */
+.field-name-field-garden-type ul li{
+	list-style: none;
+	padding: 0;
+}
+.group-event-info{
+	text-align: center;
+}
+.node-type-event .node-garden-landing-page h2{
+	display: none;
+}
+.node-type-event .node-garden-landing-page .content{
+	margin-top: 40px;
+}
+.node-type-event .node-garden-landing-page .field-name-field-garden-type ul{
+	padding: 0;
+	margin-bottom: 10px;
+}
+.node-type-event .node-garden-landing-page .map-link .map-link a{
+	color: #97b420;
+}
