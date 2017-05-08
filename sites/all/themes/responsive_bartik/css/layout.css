@@ -30,7 +30,7 @@ body,
 	display: none !important;
 }
 hr{
-	1px solid rgba(0,0,0,.4);
+	border: solid 1px #ece6dd;
 }
 .max-container {
     max-width: 1290px;

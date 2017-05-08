@@ -20,12 +20,15 @@
 .membership {
   width: 100%;
   position: relative;
-  top: -188px;
 /* 
 box-shadow: 0px 10px 30px rgba(0, 0, 0, .20);
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, .20);
   -moz-box-shadow: 0px 10px 30px rgba(0, 0, 0, .20);
  */
+}
+#quicktabs-membership .field-name-body {
+    position: relative;
+    top: -188px;
 }
 
 .grnbck,
@@ -237,4 +240,26 @@ article .membership .row .col{
   width: 20%;
   border: 0;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px){
+	.responsive-table {
+		overflow-x: scroll;
+		position: relative;
+	}
+	.responsive-table .membership {
+		width: 1040px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.responsive-table .membership {
+		width: 860px;
+	}
+	.membership .type {
+		font-size: 18px;
+	}
+	.membership .cost {
+		font-size: 28px;
+	}
 }
