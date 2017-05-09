@@ -2424,3 +2424,13 @@ article .row{
 .node-type-event .node-garden-landing-page .map-link .map-link a{
 	color: #97b420;
 }
+
+/* SECTION AFTER MARGINS */
+.not-front .section-long-text > .content {
+    max-width: 1290px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+.not-front .section-long-text > .content .field-name-field-long-text-section {
+    padding: 0 15px;
+}
