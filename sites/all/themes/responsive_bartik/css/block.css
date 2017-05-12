@@ -595,5 +595,66 @@ label#bboxdonation_payment_lblSecCode {
 }
 
 
+/*================================
+=========membership forms=========
+================================*/
+
+.form-center {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Membership Option*/
+
+div#MembershipOption-BB44 {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden !important;
+    display: block !important;
+    clear: both !important;
+}
+
+.BBFormContainer .BBSVGSelectedMembershipTriangle {
+    fill: #98b523 !important;
+}
+
+.BBMembershipOptionSelectedWatermark {
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.BBWrapMembershipTitle,
+.BBWrapMembershipSubTitle,
+.BBWrapMembershipDescription {
+    padding: 0 !important;
+}
+
+.BBWrapMembershipDescription {
+    font-size: 18px !important;
+    margin-bottom: 20px !important;
+    line-height: 1.75 !important;
+    position: relative !important;
+    display: block !important;
+    float: left !important;
+}
+
+.BBMembershipListing {
+    display: block !important;
+    position: relative !important;
+    padding: 0;
+    margin: 0;
+    overflow: hidden !important;
+    clear: both !important;
+    background: transparent !important
+}
+
+.BBFormContainer .BBFormSectionMembershipDetails {
+    border-width: 0 !important;
+}
+
 
 
