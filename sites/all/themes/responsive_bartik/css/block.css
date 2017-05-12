@@ -656,5 +656,131 @@ div#MembershipOption-BB44 {
     border-width: 0 !important;
 }
 
+.BBWrapMembershipSubTitle {
+    font-size: 18px !important;
+    margin-bottom: 10px;
+}
+
+div#bboxmembership_divGiveAsGift {
+    background: transparent;
+}
+
+input#bboxmembership_chkGiveAsGift {}
+
+.BBFormCheckbox input[type="checkbox"] {
+    background: fuchsia;
+    border-radius: 4px;
+    -webkit-appearance: none;
+}
+
+legend {
+    background: fuchsia !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+div#bboxmembership_primaryMember_divBillingHeader {
+    padding: 0 !important;
+}
+
+label#bboxmembership_primaryMember_lblHeadingContact {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+label {
+    font-family: "Open Sans", sans-serif !important;
+    color: #3b3b3b;
+    text-shadow: none !important;
+    text-transform: capitalize !important;
+    font-weight: bold;
+    text-indent: 0 !important;
+    font-size: 28px !important;
+    line-height: normal;
+    vertical-align: initial !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+fieldset legend {
+    text-indent: 0 !important;
+    vertical-align: initial !important;
+    background: fuchsia !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.BBFormContainer .BBFormSectionHeading {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.BBFormIndivFields {
+    background: transparent !important;
+}
+
+.BBFormFieldContainer {
+    overflow: hidden !important;
+    display: block !important;
+}
+
+rect.BBSVGCheckboxBorder {
+    -webkit-appearance: none !important;
+    x: 0 !important;
+    y: 0 !important;
+}
+
+.BBFormContainer[data-bbox-part-id="623d5a61-92ec-4324-9a27-1754fd3ac512"] .BBFormCheckbox svg {
+    margin-left: -45px !important;
+}
+
+.BBFormFieldLabel {
+    font-family: "Open Sans", sans-serif !important;
+    font-weight: bold !important;
+    color: #35393e !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+.BBThreeFields .BBFormSelectList {
+    width: 20% !important;
+    padding: 0 35px 0 15px !important;
+    float: left;
+    display: block;
+    margin-right: 2% !important;
+    opacity: 1 !important;
+    border: 2px solid #ccc !important;
+    height: 60px !important;
+}
+
+.BBFormTextbox {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 60px !important;
+    margin-bottom: 2% !important;
+    opacity: 1 !important;
+    border: 2px solid #ccc !important;
+    padding: 0 15px !important;
+}
+
+input#bboxmembership_primaryMember_txtFirstName {
+    width: 78% !important;
+    margin-right: 0 !important;
+    opacity: 1 !important;
+}
+
+.BBFormContainer .BBFormFieldContainer {
+    background: transparent !important;
+}
+
+div#fldIndivInfo {
+    background: transparent !important;
+}
+
+.BBFormPrimaryMember.BBFormIndivFields {
+    background: #fff !important;
+}
+
 
 
