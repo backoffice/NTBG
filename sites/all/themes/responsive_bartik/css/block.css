@@ -607,11 +607,15 @@ label#bboxdonation_payment_lblSecCode {
 
 /*Membership Option*/
 
-div#MembershipOption-BB44 {
-    background: transparent;
-    border: 0;
-    padding: 0;
-    margin: 0;
+.BBWrapMembershipOption {
+    padding-right: 40px;
+}
+
+.BBMembershipOptionWrapper.BBMembershipSelected {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
     position: relative;
     overflow: hidden !important;
     display: block !important;
@@ -625,6 +629,10 @@ div#MembershipOption-BB44 {
 .BBMembershipOptionSelectedWatermark {
     left: 0 !important;
     top: 0 !important;
+}
+
+.BBFormContainer .BBFormCheckbox svg {
+    margin-left: -45px !important;
 }
 
 .BBWrapMembershipTitle,
@@ -665,21 +673,6 @@ div#bboxmembership_divGiveAsGift {
     background: transparent;
 }
 
-input#bboxmembership_chkGiveAsGift {}
-
-.BBFormCheckbox input[type="checkbox"] {
-    background: fuchsia;
-    border-radius: 4px;
-    -webkit-appearance: none;
-}
-
-legend {
-    background: fuchsia !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-}
-
 div#bboxmembership_primaryMember_divBillingHeader {
     padding: 0 !important;
 }
@@ -687,6 +680,13 @@ div#bboxmembership_primaryMember_divBillingHeader {
 label#bboxmembership_primaryMember_lblHeadingContact {
     padding: 0 !important;
     margin: 0 !important;
+}
+
+legend {
+    background: #fff !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
 }
 
 label {
@@ -706,7 +706,7 @@ label {
 fieldset legend {
     text-indent: 0 !important;
     vertical-align: initial !important;
-    background: fuchsia !important;
+    background: #fff !important;
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -726,16 +726,6 @@ fieldset legend {
     display: block !important;
 }
 
-rect.BBSVGCheckboxBorder {
-    -webkit-appearance: none !important;
-    x: 0 !important;
-    y: 0 !important;
-}
-
-.BBFormContainer[data-bbox-part-id="623d5a61-92ec-4324-9a27-1754fd3ac512"] .BBFormCheckbox svg {
-    margin-left: -45px !important;
-}
-
 .BBFormFieldLabel {
     font-family: "Open Sans", sans-serif !important;
     font-weight: bold !important;
@@ -743,8 +733,10 @@ rect.BBSVGCheckboxBorder {
     -webkit-font-smoothing: antialiased;
 }
 
-.BBThreeFields .BBFormSelectList {
+.BBThreeFields .BBFormSelectList,
+.BBFormSelectList.GhostText {
     width: 20% !important;
+    max-width: inherit !important;
     padding: 0 35px 0 15px !important;
     float: left;
     display: block;
@@ -752,9 +744,11 @@ rect.BBSVGCheckboxBorder {
     opacity: 1 !important;
     border: 2px solid #ccc !important;
     height: 60px !important;
+    box-sizing: border-box !important;
 }
 
-.BBFormTextbox {
+.BBFormTextbox,
+.BBFormTextArea {
     width: 100% !important;
     max-width: 100% !important;
     height: 60px !important;
@@ -768,6 +762,86 @@ input#bboxmembership_primaryMember_txtFirstName {
     width: 78% !important;
     margin-right: 0 !important;
     opacity: 1 !important;
+    display: block;
+
+}
+
+input#bboxmembership_billing_billingAddress_txtZip {
+    width: 77.33% !important;
+    margin-right: 0 !important;
+    opacity: 1 !important;
+}
+
+input#bboxmembership_billing_billingAddress_txtCAPostCode,
+input#bboxmembership_billing_billingAddress_txtAUPostCode,
+input#bboxmembership_billing_billingAddress_txtNZPostCode {
+    width: 77.3% !important;
+    margin-right: 0 !important;
+    opacity: 1 !important;
+}
+
+input#bboxmembership_billing_billingAddress_txtUKCity {
+	width: 49% !important;
+	margin-right: 2%;
+	display: block;
+	float: left;
+}
+
+select#bboxmembership_billing_billingAddress_ddNZSuburb {
+	width: 48% !important;
+	margin-bottom: 2% !important;
+}
+
+select#bboxmembership_billing_billingAddress_ddUKCounty {
+    width: 49% !important;
+    margin-right: 0 !important;
+}
+
+/**/
+
+@media screen and (max-width:800px){
+	.BBThreeFields .BBFormSelectList,
+	.BBFormSelectList.GhostText,
+	select#bboxmembership_billing_billingAddress_ddUKCounty {
+	    width: 100% !important;
+	    margin: 0 0 2% 0 !important;
+	}
+
+	input#bboxmembership_primaryMember_txtFirstName,
+	input#bboxmembership_billing_billingAddress_txtZip,
+	input#bboxmembership_billing_billingAddress_txtCAPostCode,
+	input#bboxmembership_billing_billingAddress_txtAUPostCode,
+	input#bboxmembership_billing_billingAddress_txtNZPostCode,
+	input#bboxmembership_billing_billingAddress_txtUKCity {
+	    width: 100% !important;
+	}
+}
+
+/**/
+
+select#bboxmembership_primaryMember_ddTitle {
+    color: #35393e !important;
+}
+
+select#bboxmembership_billing_billingAddress_ddCountry {
+    color: #35393e !important;
+    opacity: 1;
+}
+
+.BBFormContainer span.BBFormFieldLabel_Help.BBAddGiftTotal.BBFormFieldLabel_Help {
+    padding: 0 !important;
+}
+
+input#bboxmembership_txtGiftAmount {
+    margin-bottom: 2px !important;
+}
+
+.BBFormFieldContainer.BBFieldAdditionalAmount {
+    margin-bottom: 20px !important;
+}
+
+.BBTwoFields.BBFieldBillingStateZip {
+    margin-top: 20px !important;
 }
 
 .BBFormContainer .BBFormFieldContainer {
@@ -782,5 +856,47 @@ div#fldIndivInfo {
     background: #fff !important;
 }
 
+input#bboxmembership_payment_txtCSC {
+    display: block !important;
+    float: left !important;
+    width: 100% !important;
+}
 
+div#DCCreditSecurityCode {
+    width: 100%;
+}
 
+input#bboxmembership_payment_txtCSC {
+    width: 50% !important;
+}
+
+.BBMembershipForm a#cscWhatsThis {
+    padding: 0 !important;
+}
+
+label.BBFormFieldLabel.BBFormSummaryTotal {
+    margin-bottom: 20px !important;
+    font-size: 28px !important;
+}
+
+.BBFormContainer .BBFormSubmitbutton {
+    background: #98b523 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    font-size: 18px !important;
+    padding: 5px 15px !important;
+    line-height: 60px !important;
+}
+
+.BBFormContainer .BBFormSection fieldset {
+    margin: 0 0 8% 0 !important;
+    background: #fff !important;
+}
+
+.BBFormPrimaryMember.BBFormIndivFields fieldset {
+    margin-bottom: 0 !important;
+}
+
+input#bboxmembership_billing_txtLastName {
+    margin: 0 0 2% 0 !important;
+}
