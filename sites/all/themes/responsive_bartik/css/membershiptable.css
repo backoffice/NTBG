@@ -13,6 +13,11 @@
 	padding: 0;
 }
 
+#node-20 .group-body-wrapper{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 #block-quicktabs-membership {
   margin: 3% 0 5%;
 }
