@@ -2434,3 +2434,6 @@ article .row{
 .not-front .section-long-text > .content .field-name-field-long-text-section {
     padding: 0 15px;
 }
+.pager--infinite-scroll li {
+    list-style: none;
+}
