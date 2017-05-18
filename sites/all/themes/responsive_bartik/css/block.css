@@ -634,7 +634,9 @@ label#bboxdonation_payment_lblSecCode {
 }
 
 .BBFormContainer .BBMembershipForm .BBFormCheckbox svg {
-    margin-left: -45px !important;
+    margin: 0 7px 0 0 !important;
+    vertical-align: middle;
+    height: 24px !important;
 }
 
 .BBWrapMembershipTitle,
@@ -723,7 +725,6 @@ label#bboxmembership_primaryMember_lblHeadingContact {
 }
 
 .BBMembershipForm .BBFormFieldContainer {
-    overflow: hidden !important;
     display: block !important;
 }
 
@@ -918,4 +919,12 @@ label#bboxmembership_primaryMember_lblHeadingContact {
 
 .BBFormContainer .BBMembershipForm .BBFormIndivFields .BBTwoFields .BBFormTextbox:last-of-type {
     margin-top: 0;
+}
+
+.BBFormContainer input.BBFormCheckbox.BBSVGSupport {
+    display: none;
+}
+
+.BBFormContainer .BBFormFieldLabel.BBSVGSupport {
+    left: 0 !important;
 }
