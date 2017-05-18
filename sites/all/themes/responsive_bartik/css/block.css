@@ -1,23 +1,23 @@
 /* header top blocks */
 #header-top .block{
-	float:left;
+    float:left;
 }
 
 #block-menu-block-1{
-	display:none;
-	}
+    display:none;
+    }
 @media screen and (min-width:560px){
-	#block-block-3{
+    #block-block-3{
 
-	}
-	#block-menu-block-1{
-	display:block;	
-	}
+    }
+    #block-menu-block-1{
+    display:block;  
+    }
 }
 
 /* header blocks */
 .region-header .block{
-	float:left;
+    float:left;
 }
 
 /*Donation Page*/
@@ -53,7 +53,7 @@ form#mongo-form {
 }
 
 fieldset#mongo-form {
-	margin-bottom: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 .BBFormContainer {
@@ -122,7 +122,7 @@ form#mongo-form fieldset legend {
 }
 
 div#bboxdonation_gift_fldAmountWithLevels {
-	font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px !important;
     font-weight: 700 !important;
     margin: 0 0 6% 0 !important;
@@ -176,8 +176,14 @@ label#bboxdonation_designation_lblDesignation {
 }
 
 form#mongo-form input[type=checkbox] {
-	font-size: 20px !important;
-	margin-right: 8px !important;
+    font-size: 20px !important;
+    margin-right: 8px !important;
+    float: left;
+    display: block !important;
+}
+
+form#mongo-form input#bboxdonation_billing_chkAnonymous {
+    height: 24px;
 }
 
 input#bboxdonation_tribute_chkTributeGift {
@@ -193,8 +199,8 @@ input#bboxdonation_billing_chkAnonymous {
 form#mongo-form input:focus,
 form#mongo-form textarea:focus,
 form#mongo-form select:focus {
-	outline: 0 !important;
-	box-shadow: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
 }
 
 form#mongo-form input[type=text],
@@ -203,7 +209,7 @@ form#mongo-form input[type=zip],
 form#mongo-form input[type=email],
 form#mongo-form textarea,
 form#mongo-form select {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance : none;
 }
 
@@ -234,7 +240,7 @@ div#bboxdonation_payment_divProcessedByBlackbaud {
 }
 
 .BBFormContainer .BBFormSelectList {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
     -moz-appearance : none;
     left: auto;
     right: 0;
@@ -243,7 +249,6 @@ div#bboxdonation_payment_divProcessedByBlackbaud {
     padding: 20px 40px 20px 20px !important;
     color: #35393e !important;
     border: 2px solid #cbcbcb !important;
-    width: 100% !important;
     line-height: normal !important;
     background: url('/sites/all/themes/responsive_bartik/images/dropdown.png') no-repeat right 15px center;
 }
@@ -333,19 +338,19 @@ input#bboxdonation_gift_txtAmountOther {
 }
 
 .BBFormContainer .BBFormFieldContainerGivingLevels .BBFormRadioItem {
-	padding: 0 !important;
+    padding: 0 !important;
 }
 
 .BBFormContainer .BBFormRadioLabelGivingLevel {
-	padding: 20px 25px !important;
-	overflow: hidden;
-	background: transparent !important;
+    padding: 20px 25px !important;
+    overflow: hidden;
+    background: transparent !important;
 }
 
 .BBFormContainer .BBFormRadioLabelGivingLevelSelected {
-	font-family: "Open Sans", sans-serif !important;
-	font-size: 18px !important;
-	line-height: 1.25;
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 18px !important;
+    line-height: 1.25;
     border: none;
     color: #fff !important;
     filter: none;
@@ -354,12 +359,12 @@ input#bboxdonation_gift_txtAmountOther {
 }
 
 .BBFormContainer .BBFormRadioLabelGivingLevelSelected:before {
-	font-family: 'fontawesome';
-	font-size: 16px;
-	line-height: 1.5;
-	content: '\f00c';
-	float: left;
-	padding-right: 5px;
+    font-family: 'fontawesome';
+    font-size: 16px;
+    line-height: 1.5;
+    content: '\f00c';
+    float: left;
+    padding-right: 5px;
 }
 
 label#bboxdonation_gift_rdGivingLevel8 {
@@ -382,11 +387,11 @@ label.BBFormRadioLabel.BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelOt
 }
 
 label.BBFormRadioLabel.BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelOther.BBFormRadioLabelGivingLevelSelected:before {
-	display: none;
+    display: none;
 }
 
 .BBFormContainer .BBFormGiftOtherAmount {
-	width: auto !important;
+    width: auto !important;
 }
 
 input#bboxdonation_designation_txtOtherDesignation {
@@ -411,13 +416,13 @@ textarea#bboxdonation_comment_txtComments {
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] input, 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] select, 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] textarea {
-	display: block !important;
+    display: block !important;
 }
 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBShowHandheld,
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBAccessibilityOnly,
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] label.BBAccessibilityOnly {
-	position: absolute !important;
+    position: absolute !important;
 }
 
 
@@ -447,7 +452,7 @@ textarea#bboxdonation_comment_txtComments {
 }
 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBThreeFields .BBFormTextbox:last-child {
-	margin-right: 0 !important;
+    margin-right: 0 !important;
 }
 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBThreeFields .BBFormSelectList {
@@ -465,7 +470,7 @@ textarea#bboxdonation_comment_txtComments {
 }
 
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBFormTextArea {
-	min-height: 60px;
+    min-height: 60px;
 }
 
 textarea#bboxdonation_billing_billingAddress_txtAddress {
@@ -570,28 +575,25 @@ div#bboxdonation_billing_fldAnonymous {
 .BBFormContainer[data-bbox-part-id="d000826e-880b-44dd-8d8d-739f0b866c3c"] .BBFormFieldLabel,
 label#bboxdonation_payment_lblExpiryLbl, 
 label#bboxdonation_payment_lblSecCode {
-	margin: 5px 0 !important;
+    margin: 5px 0 !important;
 }
 
 /**/
 
 @media screen and (max-width:800px){
-	input#bboxdonation_billing_txtFirstName,
-	input#bboxdonation_billing_txtLastName {
-	    width: 100% !important;
-	    margin: 10px 0 !important;
-	}
-	form#mongo-form input,
-	.BBFormContainer .BBFormSelectList {
-		font-size: 16px;
-	}
-	select#bboxdonation_payment_cboMonth,
-	select#bboxdonation_payment_cboYear {
-    	width: 45% !important;
-	}
-	form#mongo-form input[type=checkbox] {
-		margin-right: 0px !important;
-	}
+    input#bboxdonation_billing_txtFirstName,
+    input#bboxdonation_billing_txtLastName {
+        width: 100% !important;
+        margin: 10px 0 !important;
+    }
+    form#mongo-form input,
+    .BBFormContainer .BBFormSelectList {
+        font-size: 16px;
+    }
+    select#bboxdonation_payment_cboMonth,
+    select#bboxdonation_payment_cboYear {
+        width: 45% !important;
+    }
 }
 
 
@@ -622,16 +624,16 @@ label#bboxdonation_payment_lblSecCode {
     clear: both !important;
 }
 
-.BBFormContainer .BBSVGSelectedMembershipTriangle {
+.BBFormContainer .BBMembershipForm .BBSVGSelectedMembershipTriangle {
     fill: #98b523 !important;
 }
 
-.BBMembershipOptionSelectedWatermark {
+.BBMembershipForm .BBMembershipOptionSelectedWatermark {
     left: 0 !important;
     top: 0 !important;
 }
 
-.BBFormContainer .BBFormCheckbox svg {
+.BBFormContainer .BBMembershipForm .BBFormCheckbox svg {
     margin-left: -45px !important;
 }
 
@@ -682,28 +684,27 @@ label#bboxmembership_primaryMember_lblHeadingContact {
     margin: 0 !important;
 }
 
-legend {
+.BBMembershipForm legend {
     background: #fff !important;
     padding: 0 !important;
     margin: 0 !important;
     border-radius: 0 !important;
 }
 
-label {
+.BBMembershipForm label {
     font-family: "Open Sans", sans-serif !important;
     color: #3b3b3b;
     text-shadow: none !important;
     text-transform: capitalize !important;
     font-weight: bold;
     text-indent: 0 !important;
-    font-size: 28px !important;
     line-height: normal;
     vertical-align: initial !important;
-    padding: 0 !important;
+    padding: 0 0 5px !important;
     margin: 0 !important;
 }
 
-fieldset legend {
+.BBMembershipForm fieldset legend {
     text-indent: 0 !important;
     vertical-align: initial !important;
     background: #fff !important;
@@ -711,34 +712,33 @@ fieldset legend {
     margin: 0 !important;
 }
 
-.BBFormContainer .BBFormSectionHeading {
+.BBFormContainer .BBMembershipForm .BBFormSectionHeading {
     margin: 0 !important;
     padding: 0 !important;
     border: none !important;
 }
 
-.BBFormIndivFields {
+.BBMembershipForm .BBFormIndivFields {
     background: transparent !important;
 }
 
-.BBFormFieldContainer {
+.BBMembershipForm .BBFormFieldContainer {
     overflow: hidden !important;
     display: block !important;
 }
 
-.BBFormFieldLabel {
+.BBMembershipForm .BBFormFieldLabel {
     font-family: "Open Sans", sans-serif !important;
     font-weight: bold !important;
     color: #35393e !important;
     -webkit-font-smoothing: antialiased;
 }
 
-.BBThreeFields .BBFormSelectList,
-.BBFormSelectList.GhostText {
+.BBMembershipForm .BBThreeFields .BBFormSelectList,
+.BBMembershipForm .BBFormSelectList.GhostText {
     width: 20% !important;
     max-width: inherit !important;
     padding: 0 35px 0 15px !important;
-    float: left;
     display: block;
     margin-right: 2% !important;
     opacity: 1 !important;
@@ -747,8 +747,9 @@ fieldset legend {
     box-sizing: border-box !important;
 }
 
-.BBFormTextbox,
-.BBFormTextArea {
+.BBMembershipForm .BBFormTextbox,
+.BBMembershipForm .BBFormTextArea,
+.BBMembershipForm .BBTwoFields .BBFormTextbox {
     width: 100% !important;
     max-width: 100% !important;
     height: 60px !important;
@@ -758,7 +759,7 @@ fieldset legend {
     padding: 0 15px !important;
 }
 
-input#bboxmembership_primaryMember_txtFirstName {
+.BBMembershipForm input#bboxmembership_primaryMember_txtFirstName {
     width: 78% !important;
     margin-right: 0 !important;
     opacity: 1 !important;
@@ -766,33 +767,38 @@ input#bboxmembership_primaryMember_txtFirstName {
 
 }
 
-input#bboxmembership_billing_billingAddress_txtZip {
+.BBMembershipForm input#bboxmembership_billing_billingAddress_txtZip {
     width: 77.33% !important;
     margin-right: 0 !important;
     opacity: 1 !important;
 }
 
-input#bboxmembership_billing_billingAddress_txtCAPostCode,
-input#bboxmembership_billing_billingAddress_txtAUPostCode,
-input#bboxmembership_billing_billingAddress_txtNZPostCode {
+.BBMembershipForm input#bboxmembership_billing_billingAddress_txtCAPostCode,
+.BBMembershipForm input#bboxmembership_billing_billingAddress_txtAUPostCode,
+.BBMembershipForm input#bboxmembership_billing_billingAddress_txtNZPostCode,
+.BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtCAPostCode,
+.BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtAUPostCode,
+.BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtNZPostCode {
     width: 77.3% !important;
     margin-right: 0 !important;
     opacity: 1 !important;
 }
 
-input#bboxmembership_billing_billingAddress_txtUKCity {
-	width: 49% !important;
-	margin-right: 2%;
-	display: block;
-	float: left;
+.BBMembershipForm input#bboxmembership_billing_billingAddress_txtUKCity {
+    width: 49% !important;
+    margin-right: 2%;
+    display: block;
+    float: left;
 }
 
-select#bboxmembership_billing_billingAddress_ddNZSuburb {
-	width: 48% !important;
-	margin-bottom: 2% !important;
+.BBMembershipForm select#bboxmembership_billing_billingAddress_ddNZSuburb {
+    width: 48% !important;
+    margin-bottom: 2% !important;
 }
 
-select#bboxmembership_billing_billingAddress_ddUKCounty {
+.BBMembershipForm select#bboxmembership_billing_billingAddress_ddUKCounty,
+.BBMembershipForm select#bboxmembership_primaryMember_billingAddress_ddUKCounty,
+.BBMembershipForm select#bboxmembership_primaryMember_billingAddress_ddNZSuburb {
     width: 49% !important;
     margin-right: 0 !important;
 }
@@ -800,73 +806,78 @@ select#bboxmembership_billing_billingAddress_ddUKCounty {
 /**/
 
 @media screen and (max-width:800px){
-	.BBThreeFields .BBFormSelectList,
-	.BBFormSelectList.GhostText,
-	select#bboxmembership_billing_billingAddress_ddUKCounty {
-	    width: 100% !important;
-	    margin: 0 0 2% 0 !important;
-	}
+    .BBMembershipForm .BBThreeFields .BBFormSelectList,
+    .BBMembershipForm .BBFormSelectList.GhostText,
+    .BBMembershipForm select#bboxmembership_billing_billingAddress_ddUKCounty,
+    .BBMembershipForm select#bboxmembership_primaryMember_billingAddress_ddUKCounty,
+    .BBMembershipForm select#bboxmembership_primaryMember_billingAddress_ddNZSuburb {
+        width: 100% !important;
+        margin: 0 0 2% 0 !important;
+    }
 
-	input#bboxmembership_primaryMember_txtFirstName,
-	input#bboxmembership_billing_billingAddress_txtZip,
-	input#bboxmembership_billing_billingAddress_txtCAPostCode,
-	input#bboxmembership_billing_billingAddress_txtAUPostCode,
-	input#bboxmembership_billing_billingAddress_txtNZPostCode,
-	input#bboxmembership_billing_billingAddress_txtUKCity {
-	    width: 100% !important;
-	}
+    .BBMembershipForm input#bboxmembership_primaryMember_txtFirstName,
+    .BBMembershipForm input#bboxmembership_billing_billingAddress_txtZip,
+    .BBMembershipForm input#bboxmembership_billing_billingAddress_txtCAPostCode,
+    .BBMembershipForm input#bboxmembership_billing_billingAddress_txtAUPostCode,
+    .BBMembershipForm input#bboxmembership_billing_billingAddress_txtNZPostCode,
+    .BBMembershipForm input#bboxmembership_billing_billingAddress_txtUKCity,
+    .BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtCAPostCode,
+    .BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtAUPostCode,
+    .BBMembershipForm input#bboxmembership_primaryMember_billingAddress_txtNZPostCode {
+        width: 100% !important;
+    }
 }
 
 /**/
 
-select#bboxmembership_primaryMember_ddTitle {
+.BBMembershipForm select#bboxmembership_primaryMember_ddTitle {
     color: #35393e !important;
 }
 
-select#bboxmembership_billing_billingAddress_ddCountry {
+.BBMembershipForm select#bboxmembership_billing_billingAddress_ddCountry {
     color: #35393e !important;
     opacity: 1;
 }
 
-.BBFormContainer span.BBFormFieldLabel_Help.BBAddGiftTotal.BBFormFieldLabel_Help {
+.BBFormContainer .BBMembershipForm span.BBFormFieldLabel_Help.BBAddGiftTotal.BBFormFieldLabel_Help {
     padding: 0 !important;
 }
 
-input#bboxmembership_txtGiftAmount {
+.BBMembershipForm input#bboxmembership_txtGiftAmount {
     margin-bottom: 2px !important;
 }
 
-.BBFormFieldContainer.BBFieldAdditionalAmount {
+.BBMembershipForm .BBFormFieldContainer.BBFieldAdditionalAmount {
     margin-bottom: 20px !important;
 }
 
-.BBTwoFields.BBFieldBillingStateZip {
+.BBMembershipForm .BBTwoFields.BBFieldBillingStateZip {
     margin-top: 20px !important;
 }
 
-.BBFormContainer .BBFormFieldContainer {
+.BBFormContainer .BBMembershipForm .BBFormFieldContainer {
     background: transparent !important;
 }
 
-div#fldIndivInfo {
+.BBMembershipForm div#fldIndivInfo {
     background: transparent !important;
 }
 
-.BBFormPrimaryMember.BBFormIndivFields {
+.BBMembershipForm .BBFormPrimaryMember.BBFormIndivFields {
     background: #fff !important;
 }
 
-input#bboxmembership_payment_txtCSC {
+.BBMembershipForm input#bboxmembership_payment_txtCSC {
     display: block !important;
     float: left !important;
     width: 100% !important;
 }
 
-div#DCCreditSecurityCode {
+.BBMembershipForm div#DCCreditSecurityCode {
     width: 100%;
 }
 
-input#bboxmembership_payment_txtCSC {
+.BBMembershipForm input#bboxmembership_payment_txtCSC {
     width: 50% !important;
 }
 
@@ -874,12 +885,12 @@ input#bboxmembership_payment_txtCSC {
     padding: 0 !important;
 }
 
-label.BBFormFieldLabel.BBFormSummaryTotal {
+.BBMembershipForm label.BBFormFieldLabel.BBFormSummaryTotal {
     margin-bottom: 20px !important;
     font-size: 28px !important;
 }
 
-.BBFormContainer .BBFormSubmitbutton {
+.BBFormContainer .BBMembershipForm .BBFormSubmitbutton {
     background: #98b523 !important;
     width: 100% !important;
     box-sizing: border-box !important;
@@ -888,15 +899,23 @@ label.BBFormFieldLabel.BBFormSummaryTotal {
     line-height: 60px !important;
 }
 
-.BBFormContainer .BBFormSection fieldset {
+.BBFormContainer .BBMembershipForm .BBFormSection fieldset {
     margin: 0 0 8% 0 !important;
     background: #fff !important;
 }
 
-.BBFormPrimaryMember.BBFormIndivFields fieldset {
+.BBMembershipForm .BBFormPrimaryMember.BBFormIndivFields fieldset {
     margin-bottom: 0 !important;
 }
 
-input#bboxmembership_billing_txtLastName {
+.BBMembershipForm input#bboxmembership_billing_txtLastName {
     margin: 0 0 2% 0 !important;
+}
+
+.BBFormContainer .BBMembershipForm .BBFormSelectList {
+    margin-bottom: 2% !important;
+}
+
+.BBFormContainer .BBMembershipForm .BBFormIndivFields .BBTwoFields .BBFormTextbox:last-of-type {
+    margin-top: 0;
 }
