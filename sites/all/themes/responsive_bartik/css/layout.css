@@ -5,6 +5,11 @@
     display: none;
 }
 
+input{
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+
 html,
 body,
 #page  {
@@ -251,8 +256,8 @@ a.button,
 	font-size: 16px;
 	padding: 0 15px;
 	background-color: #fff;
-  display: inline-block;
-  text-align: left;
+	display: inline-block;
+	text-align: left;
 }
 input.form-submit,
 .sidr input[type="submit"],
@@ -262,6 +267,7 @@ a.button,
 	border-color: #98B523;
 	background-color: #98B523;
 	color: #fff;
+	-webkit-appearance: none;
 }
 #search-block-form input.form-submit{
 	min-width: 0;
@@ -2853,4 +2859,37 @@ ul.quicktabs-tabs li.active a {
 .page-garden-tours .all-tours .view-content > h3 {
   margin-left: 15px;
   margin-top: 40px;
+}
+
+/* EVENT NODE */
+.node-type-event .field-name-field-event-date {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.node-event .node-garden-landing-page .field-name-title-field,
+.node-event .node-garden-landing-page .field-name-field-garden-type,
+.node-event .node-garden-landing-page .field-name-field-garden-type ul {
+    font-family: "Open Sans", sans-serif !important;
+}
+.node-event .node-garden-landing-page .field-name-title-field,
+.node-event .node-garden-landing-page .field-name-field-garden-type {
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+.node-event .node-garden-landing-page .field-name-title-field,
+.node-event .node-garden-landing-page .field-name-field-garden-type {
+    float: left;
+}
+.node-event .node-garden-landing-page .field-name-title-field{
+	margin-right: 10px;
+}
+.node-event .node-garden-landing-page .field-name-field-garden-type ul{
+	margin: 0;
+}
+.node-event .node-garden-landing-page .field-name-field-garden-location {
+    padding-top: 20px;
+    display: block;
+    clear: both;
 }
