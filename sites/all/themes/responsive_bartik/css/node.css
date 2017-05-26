@@ -1,5 +1,40 @@
 .node{}
 
+/*search node*/
+
+.page-search-node #main .content {
+    max-width: 1290px;
+    margin: 4% auto;
+    padding: 0 15px;
+}
+
+.page-search-node .search-form .container-inline label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.page-search-node .search-form input.form-text {
+    width: 100%;
+}
+
+.page-search-node #search-form .form-submit {
+    text-align: center;
+    margin-top: 1%;
+    min-width: 100px;
+}
+
+.page-search-node .search-results .search-snippet-info {
+    padding: 0;
+}
+
+.page-search-node .search-results li {
+    margin-bottom: 2.5%;
+}
+
+.page-search-node .search-results .search-info {
+    text-transform: uppercase;
+}
 
 /* support us page styling */
 /*#node-1 .field-items,
