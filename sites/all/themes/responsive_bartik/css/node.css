@@ -29,11 +29,11 @@
 }
 
 .page-search-node .search-results li {
-    margin-bottom: 2.5%;
+    margin-bottom: 3%;
 }
 
 .page-search-node .search-results .search-info {
-    text-transform: uppercase;
+    display: none;
 }
 
 /* support us page styling */
