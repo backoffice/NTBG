@@ -6,7 +6,7 @@
 }
 
 input{
-	-webkit-appearance: none;
+	/*-webkit-appearance: none;*/
 	border-radius: 0;
 }
 
@@ -2130,9 +2130,11 @@ li.expanded ul.menu li.leaf {
     font-size: 22px;
 }
 
+/*
 .page-node-6 .field-name-field-multifield-links a {
     color: #35393e;
 }
+*/
 
 .page-node-6 .region-content {
     max-width: 1290px;
@@ -2830,9 +2832,15 @@ ul.quicktabs-tabs li.active a {
   color: #a08453;
   font-size: 14px;
 }
+/* 
 .views-field-field-garden-type .field-content::after {
 	content: "|";
 	margin-left: 5px;
+}
+ */
+ .garden-location-meta .views-field-city .field-content::before {
+    content: "|";
+    margin-right: 5px;
 }
 .views-field-city span:after{
 	content: ",";

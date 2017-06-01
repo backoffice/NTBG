@@ -1,0 +1,77 @@
+/* NTBG Implemented CSS */
+
+hr { border: none; }
+hr { width: 100%; clear: both; border-top: 2px solid #ece6dd; }
+
+em { font-style: italic; }
+
+.text-center {
+    text-align: center;
+}
+
+article img.floatsmall {
+    width: 98% !important;
+}
+
+.tours-header { 
+    background-image: url('/sites/all/themes/responsive_bartik/images/landingpage_tours.jpg') !important;
+    background-repeat:no-repeat !important;
+    background-attachment:scroll !important;
+    background-position:center bottom !important;
+}
+
+/*fix p on tours page */
+.taxonomy-term-reference-0 { list-style-type:  none; }
+
+/*Support Us Page Columns*/
+.support-header-block,.support-rule-block,.support-half-block,.support-third-block,.support-quarter-block {
+    border-bottom: none !important;
+    min-height: 33px !important;
+}
+.support-header-block,.support-rule-block {
+	width: 100% !important;
+ }
+.support-half-block {
+	width: 50% !important;
+ }
+.support-third-block {
+	width: 33% !important;    
+}
+.support-quarter-block {
+	width: 25% !important;
+}
+.support-clear-row {
+	clear: left;
+}
+
+/*Herbarium Search Engine Reset from BOT CSS*/
+#edit-image-only,#edit-type-only,#edit-seed-only {
+    -webkit-appearance:checkbox !important;
+}
+
+@media screen and (min-width:768px) {
+    /*One Half Column*/
+    .col.one-half { width: 48%; }
+    .col.one-third { width: 30.3%; }
+    .col.two-third { width: 59.6%; }
+    .col.three-fourth { width: 74%; }
+
+    article img.floatsmall {
+      width: 30% !important;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    
+    .support-half-block {
+        width: 100% !important;
+     }
+    .support-third-block {
+        width: 100% !important;    
+        
+    }
+    .support-quarter-block {
+        width: 50% !important;
+    }
+}
