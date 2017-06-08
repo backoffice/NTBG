@@ -1429,7 +1429,8 @@ div#sidr-1 p {
 
 /*tour taxonomy*/
 
-.page-garden-tours #edit-field-garden-taxonomy-tid-wrapper {
+.page-garden-tours #edit-field-garden-taxonomy-tid-wrapper,
+.page-gardens-tours #edit-field-garden-taxonomy-tid-wrapper {
     text-align: center;
     float: none;
     background: #f2f2f2;
@@ -2864,7 +2865,8 @@ ul.quicktabs-tabs li.active a {
 }
 
 /* ALL TOURS PAGE */
-.page-garden-tours .all-tours .view-content > h3 {
+.page-garden-tours .all-tours .view-content > h3,
+.page-gardens-tours .all-tours .view-content > h3 {
   margin-left: 15px;
   margin-top: 40px;
 }
