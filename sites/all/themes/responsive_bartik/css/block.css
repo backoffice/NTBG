@@ -222,7 +222,6 @@ form#mongo-form select {
     font-weight: normal !important;
     font-family: "Open Sans", sans-serif !important;
     font-size: 18px !important;
-    font-weight: normal !important;
     color: #35393e !important;
     margin-bottom: 5px;
 }
@@ -265,7 +264,7 @@ select#bboxdonation_designation_ddDesignations {
 /*donation checkboxes*/
 
 .BBFormRadioItem.BBFormRadioGivingLevelItem {
-    background: #d7d7d9;
+    background: #d7d7d9 !important;
     overflow: hidden;
     margin: 5px;
     width: auto !important;
@@ -317,7 +316,7 @@ span.BBFormRadioAmount {
 }
 
 .BBFormRadioGivingLevelItem:last-child {
-    background: transparent;
+    /*background: transparent;*/
     padding: 0 !important;
     margin: 0 0 0 5px !important;
     display: inline-block !important;
@@ -725,7 +724,7 @@ label#bboxmembership_primaryMember_lblHeadingContact {
 }
 
 .BBMembershipForm .BBFormFieldContainer {
-    display: block !important;
+    display: block;
 }
 
 .BBMembershipForm .BBFormFieldLabel {
